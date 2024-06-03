@@ -140,8 +140,8 @@ export const TabletBackButton = styled.button`
   background: #333;
   border-radius: 6px;
   opacity: 0.8;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
 `
 
 export const BackButtonParagraph = styled.p`
@@ -164,8 +164,8 @@ export const TabletHomeButton = styled.button`
   background: #333;
   border-radius: 6px;
   opacity: 0.8;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
 `
 
 export const HomeButtonParagraph = styled.p`

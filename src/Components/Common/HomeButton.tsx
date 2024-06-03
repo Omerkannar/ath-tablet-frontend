@@ -17,7 +17,7 @@ const HomeButton = ({disabled}: HomeButtonInterface) => {
 
     return (
         <TabletHomeButton disabled={disabled} onClick={()=>routeChange('/main')}>
-            <img src={HomeIcon} width={'30px'}/>
+            <img src={HomeIcon} width={'25px'}/>
             <HomeButtonParagraph>Main</HomeButtonParagraph>
         </TabletHomeButton>
     )

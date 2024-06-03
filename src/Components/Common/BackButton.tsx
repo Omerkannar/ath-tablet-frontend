@@ -15,7 +15,7 @@ const BackButton = ({disabled}: BackButtonInterface) => {
 
     return (
         <TabletBackButton disabled={disabled} onClick={handleGoBack}>
-            <img src={BackIcon} width={'30px'}/>
+            <img src={BackIcon} width={'25px'}/>
             <BackButtonParagraph>Back</BackButtonParagraph>
         </TabletBackButton>
     )

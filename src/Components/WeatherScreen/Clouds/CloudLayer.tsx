@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { MainContainer, VL } from "../../Common/Common.styles";
+import { VL } from "../../Common/Common.styles";
 import {
     CloudLayerContainer,
     CloudLayerHeadingContainer,
@@ -21,9 +21,8 @@ import { CloudLayerType } from "../Weather.types";
 
 
 interface CloudLayerInterface {
-    layerName: string;
     data: CloudLayerType;
-    handleCloudsChange: (layer : CloudLayerType, LayerName: string) => void;
+    handleCloudsChange: (layer : CloudLayerType) => void;
 }
 
 
@@ -32,33 +31,40 @@ const MAX_LAYER_ALTITUDE : number = 40000;
 //const cloudTypes = ["Stratus", "Cumulus", "Cirrus", "Fractus"];
 
 
-const CloudLayer = ({ layerName, data, handleCloudsChange }: CloudLayerInterface) => {
+const CloudLayer = ({ data, handleCloudsChange }: CloudLayerInterface) => {
 
     //console.log(data)
 
-    const [cloudsData, SetCloudData] = useState<CloudLayerType>(data);
+    const [cloudsData, setCloudData] = useState<CloudLayerType>(data);
+
+
+    useEffect(() => {
+        setCloudData(data)
+    }, [data])
     
 
     useEffect(() => {
-        handleCloudsChange(cloudsData, layerName);
+        if (data !== cloudsData) {
+            handleCloudsChange(cloudsData);
+        }
     }, [cloudsData])
 
     const handleCloudTypeChange = (event: any) => {
         switch (cloudsData.LAYER_TYPE) {
             case "Stratus":
-                SetCloudData({...cloudsData, LAYER_TYPE: "Cumulus"});
+                setCloudData({...cloudsData, LAYER_TYPE: "Cumulus"});
                 break;
             case "Cumulus":
-                SetCloudData({...cloudsData, LAYER_TYPE: "Cirrus"});
+                setCloudData({...cloudsData, LAYER_TYPE: "Cirrus"});
                 break;
             case "Cirrus":
-                SetCloudData({...cloudsData, LAYER_TYPE: "Fractus"});
+                setCloudData({...cloudsData, LAYER_TYPE: "Fractus"});
                 break;
             case "Fractus":
-                SetCloudData({...cloudsData, LAYER_TYPE: "Stratus"});
+                setCloudData({...cloudsData, LAYER_TYPE: "Stratus"});
                 break;
             default:
-                SetCloudData({...cloudsData, LAYER_TYPE: "Unknown"});
+                setCloudData({...cloudsData, LAYER_TYPE: "Unknown"});
                 break;
         }
     }
@@ -72,7 +78,7 @@ const CloudLayer = ({ layerName, data, handleCloudsChange }: CloudLayerInterface
         } else if (tmpLayerCovearge < 0) {
             tmpLayerCovearge = 8;
         }
-        SetCloudData({...cloudsData, LAYER_COVERAGE: tmpLayerCovearge});
+        setCloudData({...cloudsData, LAYER_COVERAGE: tmpLayerCovearge});
     }
 
     const handleLayerCeilingAltitudeChange = (event: any) => {
@@ -81,9 +87,9 @@ const CloudLayer = ({ layerName, data, handleCloudsChange }: CloudLayerInterface
         if (tmpLayerCeilingAltitude > MAX_LAYER_ALTITUDE) {
             tmpLayerCeilingAltitude = MAX_LAYER_ALTITUDE;
         } else if (tmpLayerCeilingAltitude < cloudsData.LAYER_BASE_ALT) {
-            SetCloudData({...cloudsData, LAYER_BASE_ALT: tmpLayerCeilingAltitude});
+            setCloudData({...cloudsData, LAYER_BASE_ALT: tmpLayerCeilingAltitude});
         }
-        SetCloudData({...cloudsData, LAYER_CEILING_ALT: tmpLayerCeilingAltitude});
+        setCloudData({...cloudsData, LAYER_CEILING_ALT: tmpLayerCeilingAltitude});
     }
 
     const handleLayerBaseAltitudeChange = (event: any) => {
@@ -95,9 +101,9 @@ const CloudLayer = ({ layerName, data, handleCloudsChange }: CloudLayerInterface
             tmpLayerBaseAltitude = 0;
         }
         if (tmpLayerBaseAltitude > cloudsData.LAYER_CEILING_ALT) {
-            SetCloudData({...cloudsData, LAYER_CEILING_ALT: tmpLayerBaseAltitude});
+            setCloudData({...cloudsData, LAYER_CEILING_ALT: tmpLayerBaseAltitude});
         }
-        SetCloudData({...cloudsData, LAYER_BASE_ALT: tmpLayerBaseAltitude});
+        setCloudData({...cloudsData, LAYER_BASE_ALT: tmpLayerBaseAltitude});
     }
 
 
@@ -105,7 +111,7 @@ const CloudLayer = ({ layerName, data, handleCloudsChange }: CloudLayerInterface
         <CloudLayerContainer>
 
             <CloudLayerHeadingContainer>
-                <CloudLayerHeading>{layerName}</CloudLayerHeading>
+                <CloudLayerHeading>{cloudsData.LAYER_NAME}</CloudLayerHeading>
             </CloudLayerHeadingContainer>
             <VL />
 
