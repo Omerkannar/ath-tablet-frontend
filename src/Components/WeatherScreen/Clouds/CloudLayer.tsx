@@ -126,7 +126,7 @@ const CloudLayer = ({ data, handleCloudsChange }: CloudLayerInterface) => {
             <CloudLayerAltitudeContainer>
                 <CloudsTypeButton>
                     <CloudLayerBoxTitle>Base Altitude</CloudLayerBoxTitle>
-                    <CloudsAltitudeText>{cloudsData.LAYER_BASE_ALT}</CloudsAltitudeText>
+                    <CloudsAltitudeText>{cloudsData.LAYER_BASE_ALT} ft</CloudsAltitudeText>
                     <ButtonsContainer>
                         <LayerButton onClick={handleLayerBaseAltitudeChange}>-</LayerButton>
                         <LayerButton onClick={handleLayerBaseAltitudeChange}>+</LayerButton>
@@ -138,7 +138,7 @@ const CloudLayer = ({ data, handleCloudsChange }: CloudLayerInterface) => {
             <CloudLayerAltitudeContainer>
                 <CloudsTypeButton>
                     <CloudLayerBoxTitle>Ceiling Altitude</CloudLayerBoxTitle>
-                    <CloudsAltitudeText>{cloudsData.LAYER_CEILING_ALT}</CloudsAltitudeText>
+                    <CloudsAltitudeText>{cloudsData.LAYER_CEILING_ALT} ft</CloudsAltitudeText>
                     <ButtonsContainer>
                         <LayerButton onClick={handleLayerCeilingAltitudeChange}>-</LayerButton>
                         <LayerButton onClick={handleLayerCeilingAltitudeChange}>+</LayerButton>

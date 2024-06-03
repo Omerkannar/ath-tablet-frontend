@@ -17,7 +17,41 @@ export const CloudLayerContainer = styled.div`
   align-items:center;
 `;
 
+export const WindLayerContainer = styled.div`
+  font-family: arial;
+  display: flex;
+  padding: 0px 0px;
+  margin: 20px;
+  width: 80%;
+  height : 150px;
+  background-color: #343841;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+  flex-direction : row;
+  flex-wrap: nowrap;
+  justify-content:center;
+  align-items:center;
+`;
+
 export const CloudLayerHeadingContainer = styled.div`
+  font-family: arial;
+  display: flex;
+  padding: 0px 0px;
+  margin: 20px;
+  width: 14%;
+  height : 150px;
+  background-color: #343841;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+  flex-direction : row;
+  flex-wrap: nowrap;
+  justify-content:center;
+  align-items:center;
+`;
+
+export const WindLayerHeadingContainer = styled.div`
   font-family: arial;
   display: flex;
   padding: 0px 0px;
@@ -68,6 +102,23 @@ export const CloudLayerAltitudeContainer = styled.div`
   align-items:center;
 `;
 
+export const WindLayerAltitudeContainer = styled.div`
+  font-family: arial;
+  display: flex;
+  padding: 0px 0px;
+  margin: 0px;
+  width: 23%;
+  height : 150px;
+  background-color: #343841;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+  flex-direction : row;
+  flex-wrap: nowrap;
+  justify-content:center;
+  align-items:center;
+`;
+
 export const CloudLayerCoverageContainer = styled.div`
 font-family: arial;
 display: flex;
@@ -94,6 +145,15 @@ export const CloudLayerHeading = styled.h1`
   text-align:center;
 `;
 
+export const WindLayerHeading = styled.h1`
+  margin: 0;
+  color: #bfbfc3;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align:center;
+`;
+
 export const CloudLayerBoxTitle = styled.h2`
   margin: 0;
   color: #bfbfc3;
@@ -102,7 +162,30 @@ export const CloudLayerBoxTitle = styled.h2`
   padding-bottom: 10px;
 `;
 
+export const WindLayerBoxTitle = styled.h2`
+  margin: 0;
+  color: #bfbfc3;
+  font-size: 24px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+`;
+
 export const CloudsTypeButton = styled.div`
+  display: flex;
+  flex-direction : row;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  margin: 0px 0px;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  background: #343841;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+`
+
+export const WindsTypeButton = styled.div`
   display: flex;
   flex-direction : row;
   flex-wrap: wrap;
@@ -136,6 +219,23 @@ font-size: 22px;
 `
 
 export const CloudsCoverageText = styled.div`
+font-family: arial;
+display: flex;
+padding: 0px 0px;
+margin: 0px;
+width: 80%;
+height : 40px;
+background-color: #343841;
+color: white;
+box-sizing: border-box;
+border-radius: 4px;
+flex-direction : row;
+flex-wrap: nowrap;
+justify-content:center;
+align-items:center;
+font-size: 22px;
+`
+export const WindsAltitudeText = styled.div`
 font-family: arial;
 display: flex;
 padding: 0px 0px;
