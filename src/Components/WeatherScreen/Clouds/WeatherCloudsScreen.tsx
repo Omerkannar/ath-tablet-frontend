@@ -1,14 +1,10 @@
-import { MainContainer, BodyContainer, VL } from "../../Common/Common.styles";
+import { MainContainer, BodyContainer} from "../../Common/Common.styles";
 import CloudLayer from "./CloudLayer";
 import Header from "../../Common/Header";
 import Footer from "../../Common/Footer";
 import { CloudLayerType } from "../Weather.types";
 import { useEffect, useState } from "react";
 
-
-interface  WeatherCloudsScreenInterface {
-
-}
 
 const WeatherCloudsScreen = () => {
 

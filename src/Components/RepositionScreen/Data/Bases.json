@@ -1,0 +1,3560 @@
+[
+    {
+        "id": -1,
+        "name": "--Select Base--",
+        "points": [
+            {
+                "id": -1,
+                "name": "--Select Location--",
+                "x": -1,
+                "y": -1,
+                "lat": -1,
+                "long": -1,
+                "additionalData" : [
+                    {
+                        "info" : "N\\A",
+                        "lat": -1,
+                        "long": -1,
+                        "heading" : -1,
+                        "alt" : -1,
+                        "vel" : -1,
+                        "engineOn" : false,
+                        "inAir" : false
+                    }
+                ]
+            }
+        ]
+    },
+	{
+      "id": 1,
+      "name": "Hazerim - Heliport",
+      "points": [
+        {
+          "id": 0,
+          "name": "28",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.26233,
+          "long": 34.64875,
+          "additionalData": [
+            {
+              "info": "Heliport 11",
+              "lat": 31.26233,
+              "long": 34.64875,
+              "heading": 360,
+              "alt": 640,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            },
+            {
+              "info": "Heliport 12",
+              "lat": 31.26246,
+              "long": 34.64807,
+              "heading": 360,
+              "alt": 643,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            },
+            {
+              "info": "Heliport 13",
+              "lat": 31.26259,
+              "long": 34.64739,
+              "heading": 360,
+              "alt": 632,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            },
+            {
+              "info": "Heliport 14",
+              "lat": 31.26272,
+              "long": 34.64669,
+              "heading": 360,
+              "alt": 620,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            },
+            {
+              "info": "After T.O",
+              "lat": 31.2643,
+              "long": 34.6473,
+              "heading": 300,
+              "alt": 785,
+              "vel": 60,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Short Final",
+              "lat": 31.26549,
+              "long": 34.66065,
+              "heading": 255,
+              "alt": 910,
+              "vel": 60,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Long Final",
+              "lat": 31.26677,
+              "long": 34.69358,
+              "heading": 265,
+              "alt": 1250,
+              "vel": 80,
+              "engineOn": true,
+              "inAir": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Hazerim - Kedem",
+      "points": [
+        {
+          "id": 0,
+          "name": "28",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.2694,
+          "long": 34.64256,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.2694,
+              "long": 34.64256,
+              "heading": 103,
+              "alt": 1130,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.25154,
+              "long": 34.639,
+              "heading": 103,
+              "alt": 1100,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.23865,
+              "long": 34.74169,
+              "heading": 283,
+              "alt": 1840,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.25054,
+              "long": 34.68659,
+              "heading": 283,
+              "alt": 1230,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.25651,
+              "long": 34.65915,
+              "heading": 283,
+              "alt": 912,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.2586,
+              "long": 34.64926,
+              "heading": 283,
+              "alt": 643,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "10",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.25154,
+          "long": 34.639,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.25154,
+              "long": 34.639,
+              "heading": 283,
+              "alt": 1100,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.2694,
+              "long": 34.64256,
+              "heading": 283,
+              "alt": 1130,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.28348,
+              "long": 34.53936,
+              "heading": 103,
+              "alt": 1350,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.27046,
+              "long": 34.5942,
+              "heading": 103,
+              "alt": 950,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.26464,
+              "long": 34.62171,
+              "heading": 103,
+              "alt": 776,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.26219,
+              "long": 34.63269,
+              "heading": 103,
+              "alt": 590,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Hazerim",
+      "points": [
+        {
+          "id": 0,
+          "name": "28R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.24747,
+          "long": 34.66071,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.24747,
+              "long": 34.66071,
+              "heading": 103,
+              "alt": 1240,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.22976,
+              "long": 34.65672,
+              "heading": 103,
+              "alt": 1300,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.21602,
+              "long": 34.76235,
+              "heading": 283,
+              "alt": 1900,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.22757,
+              "long": 34.7072,
+              "heading": 283,
+              "alt": 1200,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.23372,
+              "long": 34.67973,
+              "heading": 283,
+              "alt": 1040,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.23595,
+              "long": 34.67009,
+              "heading": 283,
+              "alt": 720,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "28L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.23777,
+          "long": 34.66616,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.23777,
+              "long": 34.66616,
+              "heading": 103,
+              "alt": 1215,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.21997,
+              "long": 34.66196,
+              "heading": 103,
+              "alt": 1220,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.20493,
+              "long": 34.77008,
+              "heading": 283,
+              "alt": 1980,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.21727,
+              "long": 34.71529,
+              "heading": 283,
+              "alt": 1250,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.2234,
+              "long": 34.68784,
+              "heading": 283,
+              "alt": 970,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.22558,
+              "long": 34.6782,
+              "heading": 283,
+              "alt": 800,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "10L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.22976,
+          "long": 34.65672,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.22976,
+              "long": 34.65672,
+              "heading": 283,
+              "alt": 1300,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.24747,
+              "long": 34.66071,
+              "heading": 283,
+              "alt": 1240,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.26281,
+              "long": 34.55015,
+              "heading": 103,
+              "alt": 1360,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.25062,
+              "long": 34.60499,
+              "heading": 103,
+              "alt": 1000,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.24449,
+              "long": 34.63252,
+              "heading": 103,
+              "alt": 850,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.24246,
+              "long": 34.64168,
+              "heading": 103,
+              "alt": 675,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "10R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.21997,
+          "long": 34.66196,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.21997,
+              "long": 34.66196,
+              "heading": 283,
+              "alt": 1220,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.23777,
+              "long": 34.66616,
+              "heading": 283,
+              "alt": 1215,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.25303,
+              "long": 34.5581,
+              "heading": 103,
+              "alt": 1400,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.24053,
+              "long": 34.61288,
+              "heading": 103,
+              "alt": 1083,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.23428,
+              "long": 34.6404,
+              "heading": 103,
+              "alt": 906,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.23219,
+              "long": 34.64956,
+              "heading": 103,
+              "alt": 692,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ramat David",
+      "points": [
+        {
+          "id": 0,
+          "name": "33",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.67144,
+          "long": 35.19303,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.67144,
+              "long": 35.19303,
+              "heading": 142,
+              "alt": 690,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.66109,
+              "long": 35.17547,
+              "heading": 142,
+              "alt": 744,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 32.59144,
+              "long": 35.24418,
+              "heading": 322,
+              "alt": 1184,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.63191,
+              "long": 35.21181,
+              "heading": 322,
+              "alt": 666,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.65216,
+              "long": 35.19582,
+              "heading": 322,
+              "alt": 414,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.65897,
+              "long": 35.19039,
+              "heading": 322,
+              "alt": 167,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "15",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.66109,
+          "long": 35.17547,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.66109,
+              "long": 35.17547,
+              "heading": 322,
+              "alt": 744,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.67144,
+              "long": 35.19303,
+              "heading": 322,
+              "alt": 690,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 32.74132,
+              "long": 35.12471,
+              "heading": 142,
+              "alt": 1600,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.70064,
+              "long": 35.15638,
+              "heading": 142,
+              "alt": 770,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.6805,
+              "long": 35.17248,
+              "heading": 142,
+              "alt": 410,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.67377,
+              "long": 35.17792,
+              "heading": 142,
+              "alt": 164,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "27",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.67547,
+          "long": 35.17618,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.67547,
+              "long": 35.17618,
+              "heading": 84,
+              "alt": 661,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.65731,
+              "long": 35.17797,
+              "heading": 84,
+              "alt": 646,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 32.67755,
+              "long": 35.28614,
+              "heading": 264,
+              "alt": 1795,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.67091,
+              "long": 35.22904,
+              "heading": 264,
+              "alt": 907,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.66801,
+              "long": 35.20039,
+              "heading": 264,
+              "alt": 453,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.66708,
+              "long": 35.19085,
+              "heading": 264,
+              "alt": 184,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "09",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.65731,
+          "long": 35.17797,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.65731,
+              "long": 35.17797,
+              "heading": 264,
+              "alt": 646,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.67547,
+              "long": 35.17618,
+              "heading": 264,
+              "alt": 661,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 32.6563,
+              "long": 35.0684,
+              "heading": 84,
+              "alt": 1730,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.66215,
+              "long": 35.12564,
+              "heading": 84,
+              "alt": 605,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.66491,
+              "long": 35.15437,
+              "heading": 84,
+              "alt": 355,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.66576,
+              "long": 35.16392,
+              "heading": 84,
+              "alt": 148,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "29",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.6684,
+          "long": 35.17655,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.6684,
+              "long": 35.17655,
+              "heading": 106,
+              "alt": 650,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.65021,
+              "long": 35.17081,
+              "heading": 106,
+              "alt": 630,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 32.63112,
+              "long": 35.27681,
+              "heading": 286,
+              "alt": 1226,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.64619,
+              "long": 35.22195,
+              "heading": 286,
+              "alt": 670,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.65373,
+              "long": 35.19461,
+              "heading": 286,
+              "alt": 417,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.6563,
+              "long": 35.18549,
+              "heading": 286,
+              "alt": 154,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "11",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.65021,
+          "long": 35.17081,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.65021,
+              "long": 35.17081,
+              "heading": 286,
+              "alt": 630,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.6684,
+              "long": 35.17655,
+              "heading": 286,
+              "alt": 650,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 32.68825,
+              "long": 35.07301,
+              "heading": 106,
+              "alt": 2547,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.67259,
+              "long": 35.12761,
+              "heading": 106,
+              "alt": 600,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.66486,
+              "long": 35.15488,
+              "heading": 106,
+              "alt": 355,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.6623,
+              "long": 35.16403,
+              "heading": 106,
+              "alt": 137,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Tel Nof",
+      "points": [
+        {
+          "id": 0,
+          "name": "36",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.83547,
+          "long": 34.82831,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.83547,
+              "long": 34.82831,
+              "heading": 178,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.83625,
+              "long": 34.80727,
+              "heading": 178,
+              "alt": 664,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.74417,
+              "long": 34.8186,
+              "heading": 358,
+              "alt": 1243,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.79302,
+              "long": 34.81711,
+              "heading": 358,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.81733,
+              "long": 34.81683,
+              "heading": 358,
+              "alt": 460,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.82553,
+              "long": 34.81724,
+              "heading": 358,
+              "alt": 200,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "18",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.83625,
+          "long": 34.80727,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.83625,
+              "long": 34.80727,
+              "heading": 358,
+              "alt": 664,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.83547,
+              "long": 34.82831,
+              "heading": 358,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.92797,
+              "long": 34.82041,
+              "heading": 178,
+              "alt": 1215,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.87918,
+              "long": 34.81873,
+              "heading": 178,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.8548,
+              "long": 34.81903,
+              "heading": 178,
+              "alt": 417,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.84675,
+              "long": 34.81843,
+              "heading": 178,
+              "alt": 184,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "33R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.84342,
+          "long": 34.84133,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.84342,
+              "long": 34.84133,
+              "heading": 146,
+              "alt": 692,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.83439,
+              "long": 34.82298,
+              "heading": 146,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.75915,
+              "long": 34.88701,
+              "heading": 326,
+              "alt": 1533,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.80162,
+              "long": 34.85735,
+              "heading": 326,
+              "alt": 850,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.82185,
+              "long": 34.84361,
+              "heading": 326,
+              "alt": 512,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.82889,
+              "long": 34.83876,
+              "heading": 326,
+              "alt": 247,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "33L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.84274,
+          "long": 34.83561,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.84274,
+              "long": 34.83561,
+              "heading": 146,
+              "alt": 710,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.83291,
+              "long": 34.81797,
+              "heading": 146,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.75827,
+              "long": 34.88077,
+              "heading": 326,
+              "alt": 1471,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.80053,
+              "long": 34.85233,
+              "heading": 326,
+              "alt": 811,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.82143,
+              "long": 34.83777,
+              "heading": 326,
+              "alt": 506,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.82847,
+              "long": 34.83293,
+              "heading": 326,
+              "alt": 226,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "15L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.83439,
+          "long": 34.82298,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.83439,
+              "long": 34.82298,
+              "heading": 326,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.84342,
+              "long": 34.84133,
+              "heading": 326,
+              "alt": 692,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.91716,
+              "long": 34.77802,
+              "heading": 146,
+              "alt": 1066,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.87541,
+              "long": 34.80717,
+              "heading": 146,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.85443,
+              "long": 34.82172,
+              "heading": 146,
+              "alt": 427,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.84743,
+              "long": 34.82656,
+              "heading": 146,
+              "alt": 167,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "15R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.83291,
+          "long": 34.81797,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.83291,
+              "long": 34.81797,
+              "heading": 326,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.84274,
+              "long": 34.83561,
+              "heading": 326,
+              "alt": 710,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.91728,
+              "long": 34.77305,
+              "heading": 146,
+              "alt": 1062,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.8751,
+              "long": 34.80151,
+              "heading": 146,
+              "alt": 677,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.854,
+              "long": 34.81598,
+              "heading": 146,
+              "alt": 414,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.84701,
+              "long": 34.82075,
+              "heading": 146,
+              "alt": 178,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Hazor",
+      "points": [
+        {
+          "id": 0,
+          "name": "29R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.76989,
+          "long": 34.73699,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.76989,
+              "long": 34.73699,
+              "heading": 107,
+              "alt": 684,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.75277,
+              "long": 34.73061,
+              "heading": 107,
+              "alt": 641,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.73118,
+              "long": 34.8355,
+              "heading": 287,
+              "alt": 1408,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.74653,
+              "long": 34.78124,
+              "heading": 287,
+              "alt": 726,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.75482,
+              "long": 34.75453,
+              "heading": 287,
+              "alt": 424,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.75737,
+              "long": 34.7455,
+              "heading": 287,
+              "alt": 157,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "29L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.76863,
+          "long": 34.73568,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.76863,
+              "long": 34.73568,
+              "heading": 107,
+              "alt": 680,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.75122,
+              "long": 34.72976,
+              "heading": 107,
+              "alt": 633,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.72869,
+              "long": 34.8344,
+              "heading": 287,
+              "alt": 1417,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.74478,
+              "long": 34.78073,
+              "heading": 287,
+              "alt": 729,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.75314,
+              "long": 34.7538,
+              "heading": 287,
+              "alt": 424,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.75577,
+              "long": 34.74478,
+              "heading": 287,
+              "alt": 154,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "11L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.75277,
+          "long": 34.73061,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.75277,
+              "long": 34.73061,
+              "heading": 287,
+              "alt": 641,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.76989,
+              "long": 34.73699,
+              "heading": 287,
+              "alt": 684,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.79319,
+              "long": 34.63248,
+              "heading": 107,
+              "alt": 1026,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.77658,
+              "long": 34.68629,
+              "heading": 107,
+              "alt": 566,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.76834,
+              "long": 34.7132,
+              "heading": 107,
+              "alt": 353,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.76531,
+              "long": 34.72202,
+              "heading": 107,
+              "alt": 154,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "11R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.75122,
+          "long": 34.72976,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.75122,
+              "long": 34.72976,
+              "heading": 287,
+              "alt": 633,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.76863,
+              "long": 34.73568,
+              "heading": 287,
+              "alt": 680,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.79271,
+              "long": 34.63198,
+              "heading": 107,
+              "alt": 1026,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.77508,
+              "long": 34.68502,
+              "heading": 107,
+              "alt": 578,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.76684,
+              "long": 34.71187,
+              "heading": 107,
+              "alt": 384,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.76392,
+              "long": 34.72084,
+              "heading": 107,
+              "alt": 154,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "23",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.76855,
+          "long": 34.72037,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.76855,
+              "long": 34.72037,
+              "heading": 53,
+              "alt": 638,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.75259,
+              "long": 34.73051,
+              "heading": 53,
+              "alt": 641,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.81979,
+              "long": 34.80755,
+              "heading": 233,
+              "alt": 1148,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.78791,
+              "long": 34.76463,
+              "heading": 233,
+              "alt": 760,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.77185,
+              "long": 34.74291,
+              "heading": 233,
+              "alt": 444,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.7667,
+              "long": 34.73556,
+              "heading": 233,
+              "alt": 174,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "05",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.75259,
+          "long": 34.73051,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.75259,
+              "long": 34.73051,
+              "heading": 233,
+              "alt": 641,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.76855,
+              "long": 34.72037,
+              "heading": 233,
+              "alt": 638,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.70236,
+              "long": 34.6422,
+              "heading": 53,
+              "alt": 1129,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.73519,
+              "long": 34.68428,
+              "heading": 53,
+              "alt": 618,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.74967,
+              "long": 34.70732,
+              "heading": 53,
+              "alt": 428,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.75429,
+              "long": 34.71517,
+              "heading": 53,
+              "alt": 133,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Uvda",
+      "points": [
+        {
+          "id": 0,
+          "name": "21L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 29.94308,
+          "long": 34.92787,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 29.94308,
+              "long": 34.92787,
+              "heading": 22,
+              "alt": 2032,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 29.93624,
+              "long": 34.94703,
+              "heading": 22,
+              "alt": 2016,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 30.02906,
+              "long": 34.97305,
+              "heading": 202,
+              "alt": 2428,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 29.98286,
+              "long": 34.95557,
+              "heading": 202,
+              "alt": 1943,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 29.95981,
+              "long": 34.94624,
+              "heading": 202,
+              "alt": 1697,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 29.95209,
+              "long": 34.94318,
+              "heading": 202,
+              "alt": 1470,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "21R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 29.9443,
+          "long": 34.92446,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 29.9443,
+              "long": 34.92446,
+              "heading": 22,
+              "alt": 2045,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 29.9374,
+              "long": 34.94369,
+              "heading": 22,
+              "alt": 2019,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 30.02837,
+              "long": 34.96941,
+              "heading": 202,
+              "alt": 2529,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 29.98255,
+              "long": 34.95096,
+              "heading": 202,
+              "alt": 1980,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 29.95928,
+              "long": 34.94216,
+              "heading": 202,
+              "alt": 1710,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 29.95156,
+              "long": 34.93905,
+              "heading": 202,
+              "alt": 1476,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "03R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 29.93624,
+          "long": 34.94703,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 29.93624,
+              "long": 34.94703,
+              "heading": 202,
+              "alt": 2016,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 29.94308,
+              "long": 34.92787,
+              "heading": 202,
+              "alt": 2032,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 29.85033,
+              "long": 34.90206,
+              "heading": 22,
+              "alt": 2925,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 29.89636,
+              "long": 34.91975,
+              "heading": 22,
+              "alt": 2131,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 29.9197,
+              "long": 34.92865,
+              "heading": 22,
+              "alt": 1835,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 29.92727,
+              "long": 34.93175,
+              "heading": 22,
+              "alt": 1565,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "03L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 29.9374,
+          "long": 34.94369,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 29.9374,
+              "long": 34.94369,
+              "heading": 202,
+              "alt": 2019,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 29.9443,
+              "long": 34.92446,
+              "heading": 202,
+              "alt": 2045,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 29.85337,
+              "long": 34.8986,
+              "heading": 22,
+              "alt": 2934,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 29.89938,
+              "long": 34.9167,
+              "heading": 22,
+              "alt": 2127,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 29.92237,
+              "long": 34.9258,
+              "heading": 22,
+              "alt": 1831,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 29.93009,
+              "long": 34.92917,
+              "heading": 22,
+              "alt": 1561,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Palmachim",
+      "points": [
+        {
+          "id": 0,
+          "name": "ALPHA",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.90496,
+          "long": 34.69771,
+          "additionalData": [
+            {
+              "info": "TakeOff",
+              "lat": 31.90496,
+              "long": 34.69771,
+              "heading": 292,
+              "alt": 131,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            },
+            {
+              "info": "After T.O",
+              "lat": 31.90649,
+              "long": 34.69419,
+              "heading": 292,
+              "alt": 273,
+              "vel": 60,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Short Final",
+              "lat": 31.90173,
+              "long": 34.70647,
+              "heading": 292,
+              "alt": 398,
+              "vel": 60,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Long Final",
+              "lat": 31.89142,
+              "long": 34.73222,
+              "heading": 292,
+              "alt": 628,
+              "vel": 80,
+              "engineOn": true,
+              "inAir": true
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "BRAVO",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.90978,
+          "long": 34.7003,
+          "additionalData": [
+            {
+              "info": "TakeOff",
+              "lat": 31.90978,
+              "long": 34.7003,
+              "heading": 292,
+              "alt": 135,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            },
+            {
+              "info": "After T.O",
+              "lat": 31.91161,
+              "long": 34.69598,
+              "heading": 292,
+              "alt": 268,
+              "vel": 60,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Short Final",
+              "lat": 31.90623,
+              "long": 34.70881,
+              "heading": 292,
+              "alt": 394,
+              "vel": 60,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Long Final",
+              "lat": 31.89631,
+              "long": 34.73491,
+              "heading": 292,
+              "alt": 592,
+              "vel": 80,
+              "engineOn": true,
+              "inAir": true
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "CHARLIE",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.91445,
+          "long": 34.70309,
+          "additionalData": [
+            {
+              "info": "TakeOff",
+              "lat": 31.91445,
+              "long": 34.70309,
+              "heading": 292,
+              "alt": 138,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            },
+            {
+              "info": "After T.O",
+              "lat": 31.91566,
+              "long": 34.70026,
+              "heading": 292,
+              "alt": 285,
+              "vel": 60,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Short Final",
+              "lat": 31.91112,
+              "long": 34.71176,
+              "heading": 292,
+              "alt": 394,
+              "vel": 60,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Long Final",
+              "lat": 31.90144,
+              "long": 34.73804,
+              "heading": 292,
+              "alt": 570,
+              "vel": 80,
+              "engineOn": true,
+              "inAir": true
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "03R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.89779,
+          "long": 34.70241,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.89779,
+              "long": 34.70241,
+              "heading": 205,
+              "alt": 631,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.90545,
+              "long": 34.6831,
+              "heading": 205,
+              "alt": 500,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.81658,
+              "long": 34.65238,
+              "heading": 25,
+              "alt": 1020,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.86177,
+              "long": 34.67399,
+              "heading": 25,
+              "alt": 607,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.8846,
+              "long": 34.68399,
+              "heading": 25,
+              "alt": 338,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.89206,
+              "long": 34.68758,
+              "heading": 25,
+              "alt": 46,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "21L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.90545,
+          "long": 34.6831,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.90545,
+              "long": 34.6831,
+              "heading": 25,
+              "alt": 500,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.89779,
+              "long": 34.70241,
+              "heading": 25,
+              "alt": 631,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.98713,
+              "long": 34.73289,
+              "heading": 205,
+              "alt": 1000,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.94166,
+              "long": 34.71202,
+              "heading": 205,
+              "alt": 548,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.91888,
+              "long": 34.70163,
+              "heading": 205,
+              "alt": 388,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.91137,
+              "long": 34.69809,
+              "heading": 205,
+              "alt": 131,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Ramon (Kanaf 25)",
+      "points": [
+        {
+          "id": 0,
+          "name": "25R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 30.78611,
+          "long": 34.66269,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 30.78611,
+              "long": 34.66269,
+              "heading": 63,
+              "alt": 2419,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 30.76909,
+              "long": 34.66969,
+              "heading": 63,
+              "alt": 2685,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 30.82504,
+              "long": 34.75908,
+              "heading": 243,
+              "alt": 2588,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 30.79832,
+              "long": 34.71193,
+              "heading": 243,
+              "alt": 2665,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 30.78619,
+              "long": 34.68736,
+              "heading": 243,
+              "alt": 2406,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 30.78224,
+              "long": 34.67893,
+              "heading": 243,
+              "alt": 2171,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "25L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 30.78325,
+          "long": 34.66399,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 30.78325,
+              "long": 34.66399,
+              "heading": 63,
+              "alt": 2638,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 30.76606,
+              "long": 34.6709,
+              "heading": 63,
+              "alt": 2695,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 30.81855,
+              "long": 34.76469,
+              "heading": 243,
+              "alt": 2601,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 30.79525,
+              "long": 34.7152,
+              "heading": 243,
+              "alt": 2656,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 30.78327,
+              "long": 34.69046,
+              "heading": 243,
+              "alt": 2394,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 30.77987,
+              "long": 34.68179,
+              "heading": 243,
+              "alt": 2145,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "07L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 30.76909,
+          "long": 34.66969,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 30.76909,
+              "long": 34.66969,
+              "heading": 243,
+              "alt": 2685,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 30.78611,
+              "long": 34.66269,
+              "heading": 243,
+              "alt": 2419,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 30.7388,
+              "long": 34.56761,
+              "heading": 63,
+              "alt": 2355,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 30.76001,
+              "long": 34.61882,
+              "heading": 63,
+              "alt": 2470,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 30.76937,
+              "long": 34.64474,
+              "heading": 63,
+              "alt": 2451,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 30.77279,
+              "long": 34.65332,
+              "heading": 63,
+              "alt": 2178,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "07R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 30.76606,
+          "long": 34.6709,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 30.76606,
+              "long": 34.6709,
+              "heading": 243,
+              "alt": 2695,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 30.78325,
+              "long": 34.66399,
+              "heading": 243,
+              "alt": 2638,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 30.73325,
+              "long": 34.56901,
+              "heading": 63,
+              "alt": 2371,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 30.75479,
+              "long": 34.61954,
+              "heading": 63,
+              "alt": 2397,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 30.76614,
+              "long": 34.64465,
+              "heading": 63,
+              "alt": 2434,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 30.76935,
+              "long": 34.65331,
+              "heading": 63,
+              "alt": 2191,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Nevatim",
+      "points": [
+        {
+          "id": 0,
+          "name": "08L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.20177,
+          "long": 35.0092,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.20177,
+              "long": 35.0092,
+              "heading": 253,
+              "alt": 1822,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.21941,
+              "long": 35.00497,
+              "heading": 253,
+              "alt": 1763,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.18909,
+              "long": 34.90252,
+              "heading": 73,
+              "alt": 2303,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.20065,
+              "long": 34.9575,
+              "heading": 73,
+              "alt": 1694,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.20627,
+              "long": 34.98513,
+              "heading": 73,
+              "alt": 1507,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.20802,
+              "long": 34.99429,
+              "heading": 73,
+              "alt": 1244,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "26R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.20177,
+          "long": 35.0092,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.20177,
+              "long": 35.0092,
+              "heading": 73,
+              "alt": 1822,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.21941,
+              "long": 35.00497,
+              "heading": 73,
+              "alt": 1763,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.23423,
+              "long": 35.11166,
+              "heading": 253,
+              "alt": 2503,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.22178,
+              "long": 35.05692,
+              "heading": 253,
+              "alt": 1947,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.21505,
+              "long": 35.02962,
+              "heading": 253,
+              "alt": 1586,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.21323,
+              "long": 35.02041,
+              "heading": 253,
+              "alt": 1298,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "08R",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.19945,
+          "long": 35.01409,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.19945,
+              "long": 35.01409,
+              "heading": 253,
+              "alt": 1822,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.21727,
+              "long": 35.01013,
+              "heading": 253,
+              "alt": 1770,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.18792,
+              "long": 34.90274,
+              "heading": 73,
+              "alt": 2276,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.19809,
+              "long": 34.95822,
+              "heading": 73,
+              "alt": 1716,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.20332,
+              "long": 34.98595,
+              "heading": 73,
+              "alt": 1497,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.20494,
+              "long": 34.99515,
+              "heading": 73,
+              "alt": 1276,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "26L",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.21727,
+          "long": 35.01013,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.21727,
+              "long": 35.01013,
+              "heading": 73,
+              "alt": 1770,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.19945,
+              "long": 35.01409,
+              "heading": 73,
+              "alt": 1822,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.23302,
+              "long": 35.12019,
+              "heading": 253,
+              "alt": 2519,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.22021,
+              "long": 35.06561,
+              "heading": 253,
+              "alt": 1944,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.21373,
+              "long": 35.03813,
+              "heading": 253,
+              "alt": 1605,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.2117,
+              "long": 35.0289,
+              "heading": 253,
+              "alt": 1319,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Negev",
+      "points": [
+        {
+          "id": 0,
+          "name": "25",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.19938,
+          "long": 35.02025,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.19938,
+              "long": 35.02025,
+              "heading": 73,
+              "alt": 1837,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.18174,
+              "long": 35.02401,
+              "heading": 73,
+              "alt": 1881,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.21944,
+              "long": 35.13147,
+              "heading": 253,
+              "alt": 2648,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.20349,
+              "long": 35.07767,
+              "heading": 253,
+              "alt": 1988,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.19617,
+              "long": 35.05055,
+              "heading": 253,
+              "alt": 1686,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.19442,
+              "long": 35.04129,
+              "heading": 253,
+              "alt": 1403,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "07",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.18174,
+          "long": 35.02401,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.18174,
+              "long": 35.02401,
+              "heading": 253,
+              "alt": 1881,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.19938,
+              "long": 35.02025,
+              "heading": 253,
+              "alt": 1837,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.16949,
+              "long": 34.9102,
+              "heading": 73,
+              "alt": 2278,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.17839,
+              "long": 34.96628,
+              "heading": 73,
+              "alt": 1802,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.18474,
+              "long": 34.9935,
+              "heading": 73,
+              "alt": 1579,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.18669,
+              "long": 35.00276,
+              "heading": 73,
+              "alt": 1283,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Natbag",
+      "points": [
+        {
+          "id": 0,
+          "name": "12",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 31.99956,
+          "long": 34.87475,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 31.99956,
+              "long": 34.87475,
+              "heading": 298,
+              "alt": 600,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.01538,
+              "long": 34.88503,
+              "heading": 298,
+              "alt": 600,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 32.05934,
+              "long": 34.78783,
+              "heading": 118,
+              "alt": 1020,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.03158,
+              "long": 34.83459,
+              "heading": 118,
+              "alt": 585,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.01846,
+              "long": 34.85887,
+              "heading": 118,
+              "alt": 332,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.01415,
+              "long": 34.86695,
+              "heading": 118,
+              "alt": 90,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "30",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.01538,
+          "long": 34.88503,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.01538,
+              "long": 34.88503,
+              "heading": 118,
+              "alt": 600,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 31.99956,
+              "long": 34.87475,
+              "heading": 118,
+              "alt": 600,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.95774,
+              "long": 34.97519,
+              "heading": 298,
+              "alt": 1440,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.98306,
+              "long": 34.92649,
+              "heading": 298,
+              "alt": 712,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.99589,
+              "long": 34.90213,
+              "heading": 298,
+              "alt": 394,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.00011,
+              "long": 34.89396,
+              "heading": 298,
+              "alt": 130,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "03",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.00288,
+          "long": 34.90266,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.00288,
+              "long": 34.90266,
+              "heading": 205,
+              "alt": 636,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.01185,
+              "long": 34.88392,
+              "heading": 205,
+              "alt": 598,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.92312,
+              "long": 34.84436,
+              "heading": 25,
+              "alt": 1266,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 31.96675,
+              "long": 34.87024,
+              "heading": 25,
+              "alt": 631,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 31.98911,
+              "long": 34.88196,
+              "heading": 25,
+              "alt": 348,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 31.9964,
+              "long": 34.88623,
+              "heading": 25,
+              "alt": 98,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "21",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.01185,
+          "long": 34.88392,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.01185,
+              "long": 34.88392,
+              "heading": 25,
+              "alt": 598,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.00288,
+              "long": 34.90266,
+              "heading": 25,
+              "alt": 636,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 32.09162,
+              "long": 34.94048,
+              "heading": 205,
+              "alt": 1131,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.04736,
+              "long": 34.91662,
+              "heading": 205,
+              "alt": 700,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.02524,
+              "long": 34.9047,
+              "heading": 205,
+              "alt": 393,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.01802,
+              "long": 34.90011,
+              "heading": 205,
+              "alt": 141,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "08",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.02493,
+          "long": 34.87856,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.02493,
+              "long": 34.87856,
+              "heading": 257,
+              "alt": 612,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.00676,
+              "long": 34.88135,
+              "heading": 257,
+              "alt": 598,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 31.99652,
+              "long": 34.76787,
+              "heading": 77,
+              "alt": 1163,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.00606,
+              "long": 34.82414,
+              "heading": 77,
+              "alt": 612,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.01129,
+              "long": 34.85184,
+              "heading": 77,
+              "alt": 332,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.0129,
+              "long": 34.86112,
+              "heading": 77,
+              "alt": 85,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "26",
+          "x": 0.0,
+          "y": 0.0,
+          "lat": 32.00676,
+          "long": 34.88135,
+          "additionalData": [
+            {
+              "info": "Downwind-Right",
+              "lat": 32.00676,
+              "long": 34.88135,
+              "heading": 77,
+              "alt": 598,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Downwind-Left",
+              "lat": 32.02493,
+              "long": 34.87856,
+              "heading": 77,
+              "alt": 612,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Far",
+              "lat": 32.0385,
+              "long": 34.99166,
+              "heading": 257,
+              "alt": 1675,
+              "vel": 120,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Medium",
+              "lat": 32.02616,
+              "long": 34.93568,
+              "heading": 257,
+              "alt": 733,
+              "vel": 100,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "Final-Close",
+              "lat": 32.02027,
+              "long": 34.90822,
+              "heading": 257,
+              "alt": 398,
+              "vel": 70,
+              "engineOn": true,
+              "inAir": true
+            },
+            {
+              "info": "TakeOff",
+              "lat": 32.01864,
+              "long": 34.89872,
+              "heading": 257,
+              "alt": 138,
+              "vel": 0,
+              "engineOn": true,
+              "inAir": false
+            },
+            {
+              "info": "",
+              "lat": 0.0,
+              "long": 0.0,
+              "heading": 0,
+              "alt": 0,
+              "vel": 0,
+              "engineOn": false,
+              "inAir": false
+            }
+          ]
+        }
+      ]
+    }
+]
