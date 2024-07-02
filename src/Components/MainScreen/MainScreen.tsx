@@ -41,7 +41,7 @@ const MainScreen = () => {
 
                 <TabletNavigationButton onClick={() => routeChange("/active-malfuncion")}>
                     <IconImage src={WarningIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Active Malfunction</NavigationButtonParagraph>
+                    <NavigationButtonParagraph>Malfunction</NavigationButtonParagraph>
                 </TabletNavigationButton>
 
             </BodyContainer>

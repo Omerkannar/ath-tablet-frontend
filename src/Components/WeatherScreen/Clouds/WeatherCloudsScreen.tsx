@@ -75,9 +75,9 @@ const WeatherCloudsScreen = () => {
         <MainContainer>
             <Header title={"Clouds"} />
             <BodyContainer>
-                {cloudsDataFromBE?.map ((l) => {
+                {cloudsDataFromBE?.map ((cloudLayer) => {
                     return (
-                        <CloudLayer data={l} {...{handleCloudsChange}}/>    
+                        <CloudLayer data={cloudLayer} {...{handleCloudsChange}}/>    
                     )
                 })}
             </BodyContainer>

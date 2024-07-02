@@ -22,11 +22,13 @@ import { CloudLayerType } from "../Weather.types";
 
 interface CloudLayerInterface {
     data: CloudLayerType;
-    handleCloudsChange: (layer : CloudLayerType) => void;
+    handleCloudsChange: (layer: CloudLayerType) => void;
 }
 
 
-const MAX_LAYER_ALTITUDE : number = 40000;
+const MAX_LAYER_ALTITUDE: number = 40000;
+const LAYER_ALTITUDE_STEP: number = 500;
+
 
 //const cloudTypes = ["Stratus", "Cumulus", "Cirrus", "Fractus"];
 
@@ -41,7 +43,7 @@ const CloudLayer = ({ data, handleCloudsChange }: CloudLayerInterface) => {
     useEffect(() => {
         setCloudData(data)
     }, [data])
-    
+
 
     useEffect(() => {
         if (data !== cloudsData) {
@@ -52,58 +54,70 @@ const CloudLayer = ({ data, handleCloudsChange }: CloudLayerInterface) => {
     const handleCloudTypeChange = (event: any) => {
         switch (cloudsData.LAYER_TYPE) {
             case "Stratus":
-                setCloudData({...cloudsData, LAYER_TYPE: "Cumulus"});
+                setCloudData({ ...cloudsData, LAYER_TYPE: "Cumulus" });
                 break;
             case "Cumulus":
-                setCloudData({...cloudsData, LAYER_TYPE: "Cirrus"});
+                setCloudData({ ...cloudsData, LAYER_TYPE: "Cirrus" });
                 break;
             case "Cirrus":
-                setCloudData({...cloudsData, LAYER_TYPE: "Fractus"});
+                setCloudData({ ...cloudsData, LAYER_TYPE: "Fractus" });
                 break;
             case "Fractus":
-                setCloudData({...cloudsData, LAYER_TYPE: "Stratus"});
+                setCloudData({ ...cloudsData, LAYER_TYPE: "Stratus" });
                 break;
             default:
-                setCloudData({...cloudsData, LAYER_TYPE: "Unknown"});
+                setCloudData({ ...cloudsData, LAYER_TYPE: "Unknown" });
                 break;
         }
     }
 
 
     const handleLayerCoverageChange = (event: any) => {
-        let tmpLayerCovearge : number = cloudsData.LAYER_COVERAGE;
+        let tmpLayerCovearge: number = cloudsData.LAYER_COVERAGE;
         tmpLayerCovearge = event.target.innerText === "+" ? tmpLayerCovearge + 1 : tmpLayerCovearge - 1;
         if (tmpLayerCovearge > 8) {
             tmpLayerCovearge = 0;
         } else if (tmpLayerCovearge < 0) {
             tmpLayerCovearge = 8;
         }
-        setCloudData({...cloudsData, LAYER_COVERAGE: tmpLayerCovearge});
+        setCloudData({ ...cloudsData, LAYER_COVERAGE: tmpLayerCovearge });
     }
 
     const handleLayerCeilingAltitudeChange = (event: any) => {
-        let tmpLayerCeilingAltitude : number = cloudsData.LAYER_CEILING_ALT;
-        tmpLayerCeilingAltitude = event.target.innerText === "+" ? tmpLayerCeilingAltitude + 500 : tmpLayerCeilingAltitude - 500;
+        let tmpLayerCeilingAltitude: number = cloudsData.LAYER_CEILING_ALT;
+        tmpLayerCeilingAltitude = event.target.innerText === "+" ? tmpLayerCeilingAltitude + LAYER_ALTITUDE_STEP : tmpLayerCeilingAltitude - LAYER_ALTITUDE_STEP;
         if (tmpLayerCeilingAltitude > MAX_LAYER_ALTITUDE) {
             tmpLayerCeilingAltitude = MAX_LAYER_ALTITUDE;
-        } else if (tmpLayerCeilingAltitude < cloudsData.LAYER_BASE_ALT) {
-            setCloudData({...cloudsData, LAYER_BASE_ALT: tmpLayerCeilingAltitude});
+        } else if (tmpLayerCeilingAltitude <= LAYER_ALTITUDE_STEP) {
+            tmpLayerCeilingAltitude = LAYER_ALTITUDE_STEP;
         }
-        setCloudData({...cloudsData, LAYER_CEILING_ALT: tmpLayerCeilingAltitude});
+        if (tmpLayerCeilingAltitude <= cloudsData.LAYER_BASE_ALT) {
+            //console.log('Ceiling is lower than base')
+            setCloudData({ ...cloudsData, LAYER_BASE_ALT: tmpLayerCeilingAltitude - LAYER_ALTITUDE_STEP, LAYER_CEILING_ALT: tmpLayerCeilingAltitude });
+        } else {
+            setCloudData({ ...cloudsData, LAYER_CEILING_ALT: tmpLayerCeilingAltitude });
+        }
     }
 
     const handleLayerBaseAltitudeChange = (event: any) => {
-        let tmpLayerBaseAltitude :number = cloudsData.LAYER_BASE_ALT;
-        tmpLayerBaseAltitude = event.target.innerText === "+" ? tmpLayerBaseAltitude + 500 : tmpLayerBaseAltitude - 500;
+        let tmpLayerBaseAltitude: number = cloudsData.LAYER_BASE_ALT;
+        tmpLayerBaseAltitude = event.target.innerText === "+" ? tmpLayerBaseAltitude + LAYER_ALTITUDE_STEP : tmpLayerBaseAltitude - LAYER_ALTITUDE_STEP;
         if (tmpLayerBaseAltitude > MAX_LAYER_ALTITUDE) {
             tmpLayerBaseAltitude = MAX_LAYER_ALTITUDE;
         } else if (tmpLayerBaseAltitude < 0) {
             tmpLayerBaseAltitude = 0;
         }
-        if (tmpLayerBaseAltitude > cloudsData.LAYER_CEILING_ALT) {
-            setCloudData({...cloudsData, LAYER_CEILING_ALT: tmpLayerBaseAltitude});
+        // console.log('tmpLayerBaseAltitude = ' + tmpLayerBaseAltitude + ' ,cloudsData.LAYER_CEILING_ALT = ' + cloudsData.LAYER_CEILING_ALT)
+        // console.log('typeof tmpLayerBaseAltitude = ' + typeof (tmpLayerBaseAltitude) + ' , typeof cloudsData.LAYER_CEILING_ALT = ' + typeof (cloudsData.LAYER_CEILING_ALT))
+
+        if (tmpLayerBaseAltitude >= cloudsData.LAYER_CEILING_ALT) {
+            //console.log('Base is higher than ceiling')
+            setCloudData({ ...cloudsData, LAYER_BASE_ALT: tmpLayerBaseAltitude, LAYER_CEILING_ALT: tmpLayerBaseAltitude + LAYER_ALTITUDE_STEP });
+        } else {
+            setCloudData({ ...cloudsData, LAYER_BASE_ALT: tmpLayerBaseAltitude });
         }
-        setCloudData({...cloudsData, LAYER_BASE_ALT: tmpLayerBaseAltitude});
+
+
     }
 
 

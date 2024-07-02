@@ -8,28 +8,30 @@ import { useEffect, useState } from "react";
 
 const WeatherWindsScreen = () => {
 
-    const initialData = [{
-        "LAYER_NAME": "Layer 1",
-        "LAYER_BASE_ALT": 0,
-        "LAYER_CEILING_ALT": 0,
-        "LAYER_SPEED": 0,
-        "LAYER_DIRECTION": 0
-    }, {
-        "LAYER_NAME": "Layer 2",
-        "LAYER_BASE_ALT": 1000,
-        "LAYER_CEILING_ALT": 2000,
-        "LAYER_SPEED": 50,
-        "LAYER_DIRECTION": 90
-    }, {
-        "LAYER_NAME": "Layer 3",
-        "LAYER_BASE_ALT": 5000,
-        "LAYER_CEILING_ALT": 9000,
-        "LAYER_SPEED": 90,
-        "LAYER_DIRECTION": 135
-    }]
+    // const initialData = [{
+    //     "LAYER_NAME": "Layer 1",
+    //     "LAYER_BASE_ALT": 0,
+    //     "LAYER_CEILING_ALT": 0,
+    //     "LAYER_SPEED": 0,
+    //     "LAYER_DIRECTION": 0
+    // }, {
+    //     "LAYER_NAME": "Layer 2",
+    //     "LAYER_BASE_ALT": 1000,
+    //     "LAYER_CEILING_ALT": 2000,
+    //     "LAYER_SPEED": 50,
+    //     "LAYER_DIRECTION": 90
+    // }, {
+    //     "LAYER_NAME": "Layer 3",
+    //     "LAYER_BASE_ALT": 5000,
+    //     "LAYER_CEILING_ALT": 9000,
+    //     "LAYER_SPEED": 90,
+    //     "LAYER_DIRECTION": 135
+    // }]
+
+    
 
     const [temp, setTemp] = useState(0);
-    const [windsDataFromBE, setWindsDataFromBE] = useState<WindLayerType[]>(initialData);
+    const [windsDataFromBE, setWindsDataFromBE] = useState<WindLayerType[]>();
 
 
     useEffect(() => {
@@ -42,7 +44,7 @@ const WeatherWindsScreen = () => {
     }, []);
 
     useEffect(() => {
-        //handleTextFromBEChange()
+        handleTextFromBEChange()
     }, [temp]);
 
 
@@ -82,7 +84,7 @@ const WeatherWindsScreen = () => {
                 LAYER_DIRECTION: layer.LAYER_DIRECTION
             })
         };
-        fetch("http://127.0.0.1:5000/setCloudLayerData", request)
+        fetch("http://127.0.0.1:5000/setWindLayerData", request)
             .then(response => response.json())
             .then(data => console.log(data));
 
@@ -92,9 +94,9 @@ const WeatherWindsScreen = () => {
         <MainContainer>
             <Header title={"Winds"} />
             <BodyContainer>
-                {windsDataFromBE?.map((w) => {
+                {windsDataFromBE?.map((windLayer) => {
                     return (
-                        <WindLayer data={w} {...{ handleWindsChange }} />
+                        <WindLayer data={windLayer} {...{ handleWindsChange }} />
                     )
                 })}
             </BodyContainer>
