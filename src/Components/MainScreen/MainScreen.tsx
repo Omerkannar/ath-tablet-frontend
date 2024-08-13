@@ -1,7 +1,7 @@
 import { MainContainer, BodyContainer, TabletNavigationButton, IconImage, NavigationButtonParagraph } from "../Common/Common.styles";
 import { useNavigate } from "react-router-dom";
-import Header from "../Common/Header";
-import Footer from "../Common/Footer";
+import Header from "../Common/Components/Header";
+import Footer from "../Common/Components/Footer";
 import WeatherIcon from '../../Assets/weather.png';
 import ConfigurationIcon from '../../Assets/settings.png'
 import WarningIcon from '../../Assets/warning.png';

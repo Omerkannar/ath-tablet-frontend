@@ -1,19 +1,14 @@
 import { useEffect, useState } from "react";
 import { VL } from "../../Common/Common.styles";
 import {
-    CloudLayerContainer,
-    CloudLayerHeadingContainer,
-    CloudLayerHeading,
-    CloudLayerTypeContainer,
-    CloudLayerAltitudeContainer,
-    CloudLayerCoverageContainer,
-    CloudLayerBoxTitle,
-    CloudsTypeButton,
-    CloudsTypeText,
-    CloudsCoverageText,
+    WeatherLayerContainer,
+    WeatherLayerSectionContainer,
+    LayerName,
+    SectionTitle,
+    WeatherSectionButton,
+    WetherSectionText,
     ButtonsContainer,
-    LayerButton,
-    CloudsAltitudeText
+    LayerButton
 } from "../Weather.styles";
 
 import { CloudLayerType } from "../Weather.types";
@@ -34,8 +29,6 @@ const LAYER_ALTITUDE_STEP: number = 500;
 
 
 const CloudLayer = ({ data, handleCloudsChange }: CloudLayerInterface) => {
-
-    //console.log(data)
 
     const [cloudsData, setCloudData] = useState<CloudLayerType>(data);
 
@@ -107,8 +100,6 @@ const CloudLayer = ({ data, handleCloudsChange }: CloudLayerInterface) => {
         } else if (tmpLayerBaseAltitude < 0) {
             tmpLayerBaseAltitude = 0;
         }
-        // console.log('tmpLayerBaseAltitude = ' + tmpLayerBaseAltitude + ' ,cloudsData.LAYER_CEILING_ALT = ' + cloudsData.LAYER_CEILING_ALT)
-        // console.log('typeof tmpLayerBaseAltitude = ' + typeof (tmpLayerBaseAltitude) + ' , typeof cloudsData.LAYER_CEILING_ALT = ' + typeof (cloudsData.LAYER_CEILING_ALT))
 
         if (tmpLayerBaseAltitude >= cloudsData.LAYER_CEILING_ALT) {
             //console.log('Base is higher than ceiling')
@@ -116,62 +107,58 @@ const CloudLayer = ({ data, handleCloudsChange }: CloudLayerInterface) => {
         } else {
             setCloudData({ ...cloudsData, LAYER_BASE_ALT: tmpLayerBaseAltitude });
         }
-
-
     }
 
 
     return (
-        <CloudLayerContainer>
+        <WeatherLayerContainer>
 
-            <CloudLayerHeadingContainer>
-                <CloudLayerHeading>{cloudsData.LAYER_NAME}</CloudLayerHeading>
-            </CloudLayerHeadingContainer>
+            <WeatherLayerSectionContainer width="14%">
+                <LayerName>{cloudsData.LAYER_NAME}</LayerName>
+            </WeatherLayerSectionContainer>
             <VL />
-
-            <CloudLayerTypeContainer>
-                <CloudsTypeButton onClick={handleCloudTypeChange}>
-                    <CloudLayerBoxTitle>Type</CloudLayerBoxTitle>
-                    <CloudsTypeText>{cloudsData.LAYER_TYPE}</CloudsTypeText>
-                </CloudsTypeButton>
-            </CloudLayerTypeContainer>
+            <WeatherLayerSectionContainer width="20%">
+                <WeatherSectionButton onClick={handleCloudTypeChange}>
+                    <SectionTitle>Type</SectionTitle>
+                    <WetherSectionText height="100px">{cloudsData.LAYER_TYPE}</WetherSectionText>
+                </WeatherSectionButton>
+            </WeatherLayerSectionContainer>
             <VL />
-
-            <CloudLayerAltitudeContainer>
-                <CloudsTypeButton>
-                    <CloudLayerBoxTitle>Base Altitude</CloudLayerBoxTitle>
-                    <CloudsAltitudeText>{cloudsData.LAYER_BASE_ALT} ft</CloudsAltitudeText>
+            <WeatherLayerSectionContainer width="23%">
+                <WeatherSectionButton>
+                    <SectionTitle>Base Altitude</SectionTitle>
+                    <WetherSectionText>{cloudsData.LAYER_BASE_ALT} ft</WetherSectionText>
                     <ButtonsContainer>
                         <LayerButton onClick={handleLayerBaseAltitudeChange}>-</LayerButton>
                         <LayerButton onClick={handleLayerBaseAltitudeChange}>+</LayerButton>
                     </ButtonsContainer>
-                </CloudsTypeButton>
-            </CloudLayerAltitudeContainer>
+                </WeatherSectionButton>
+            </WeatherLayerSectionContainer>
             <VL />
 
-            <CloudLayerAltitudeContainer>
-                <CloudsTypeButton>
-                    <CloudLayerBoxTitle>Ceiling Altitude</CloudLayerBoxTitle>
-                    <CloudsAltitudeText>{cloudsData.LAYER_CEILING_ALT} ft</CloudsAltitudeText>
+            <WeatherLayerSectionContainer width="23%">
+                <WeatherSectionButton>
+                    <SectionTitle>Ceiling Altitude</SectionTitle>
+                    <WetherSectionText>{cloudsData.LAYER_CEILING_ALT} ft</WetherSectionText>
                     <ButtonsContainer>
                         <LayerButton onClick={handleLayerCeilingAltitudeChange}>-</LayerButton>
                         <LayerButton onClick={handleLayerCeilingAltitudeChange}>+</LayerButton>
                     </ButtonsContainer>
-                </CloudsTypeButton>
-            </CloudLayerAltitudeContainer>
+                </WeatherSectionButton>
+            </WeatherLayerSectionContainer>
             <VL />
 
-            <CloudLayerCoverageContainer>
-                <CloudsTypeButton>
-                    <CloudLayerBoxTitle>Coverage</CloudLayerBoxTitle>
-                    <CloudsCoverageText>{cloudsData.LAYER_COVERAGE} / 8</CloudsCoverageText>
+            <WeatherLayerSectionContainer width="20%">
+                <WeatherSectionButton>
+                    <SectionTitle>Coverage</SectionTitle>
+                    <WetherSectionText>{cloudsData.LAYER_COVERAGE} / 8</WetherSectionText>
                     <ButtonsContainer>
                         <LayerButton onClick={handleLayerCoverageChange}>-</LayerButton>
                         <LayerButton onClick={handleLayerCoverageChange}>+</LayerButton>
                     </ButtonsContainer>
-                </CloudsTypeButton>
-            </CloudLayerCoverageContainer>
-        </CloudLayerContainer>
+                </WeatherSectionButton>
+            </WeatherLayerSectionContainer>
+        </WeatherLayerContainer>
 
     )
 }

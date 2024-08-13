@@ -1,4 +1,4 @@
-import { FooterContainer, HR } from "./Common.styles";
+import { HeaderFooterContainer, HR } from "../Common.styles";
 import BackButton from "./BackButton";
 import HomeButton from "./HomeButton";
 
@@ -12,10 +12,10 @@ const Footer = ({ buttonsDisabled }: FooterInterface) => {
     return (
         <>
             <HR />
-            <FooterContainer>
+            <HeaderFooterContainer footer={true}>
                 <BackButton disabled={buttonsDisabled}/>
                 <HomeButton disabled={buttonsDisabled}/>
-            </FooterContainer>
+            </HeaderFooterContainer>
         </>
     )
 }

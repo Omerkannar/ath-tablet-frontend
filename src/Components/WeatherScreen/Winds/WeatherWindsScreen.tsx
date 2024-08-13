@@ -1,7 +1,7 @@
 import { MainContainer, BodyContainer } from "../../Common/Common.styles";
 import WindLayer from "./WindLayer";
-import Header from "../../Common/Header";
-import Footer from "../../Common/Footer";
+import Header from "../../Common/Components/Header";
+import Footer from "../../Common/Components/Footer";
 import { WindLayerType } from "../Weather.types";
 import { useEffect, useState } from "react";
 

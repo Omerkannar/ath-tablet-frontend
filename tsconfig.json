@@ -6,6 +6,16 @@
       "dom.iterable",
       "esnext"
     ],
+    "plugins": [
+      {
+        "name": "ts-styled-plugin",
+        "lint": {
+          "validProperties": [
+            "text-wrap"
+          ]
+        }
+      }
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

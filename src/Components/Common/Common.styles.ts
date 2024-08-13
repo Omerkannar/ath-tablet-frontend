@@ -26,20 +26,22 @@ export const VL = styled.div`
   margin-top: 00px;
 `;
 
-export const HeaderContainer = styled.div`
+export const HeaderFooterContainer = styled.div<{
+  footer?: boolean;
+}>`
   font-family: arial;
   display: flex;
-  padding: 0px 0px;
+  padding: ${(p) => p.footer ? '0px 10px' : '0px 0px'};
   margin: 0;
-  width: 1280px;
+  width: 100%;
   height : 10%;
   background-color: #21242b;
   color: white;
   box-sizing: border-box;
   border-radius: 0;
-  flex-direction : column;
+  flex-direction : ${(p) => p.footer ? 'row' : 'column'};
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: ${(p) => p.footer ? 'start' : 'center'};
   align-items: center;
 `;
 
@@ -50,13 +52,13 @@ export const BodyContainer = styled.div<{
   display: flex;
   padding: 0px 10px;
   margin: 0;
-  width: 1280px;
+  width: 100%;
   height : 80%;
   background-color: #21242b;
   color: white;
   box-sizing: border-box;
   border-radius: 0;
-  flex-direction : ${(p)=> p.flexDirection || 'row'};
+  flex-direction : ${(p) => p.flexDirection || 'row'};
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
@@ -79,23 +81,6 @@ export const DividedBodyContainer = styled.div`
   align-content: start;
 `;
 
-export const FooterContainer = styled.div`
-  font-family: arial;
-  display: flex;
-  padding: 0px 10px;
-  margin: 0;
-  width: 1280px;
-  height : 10%;
-  background-color: #21242b;
-  color: white;
-  box-sizing: border-box;
-  border-radius: 0;
-  flex-direction : row;
-  flex-wrap: nowrap;
-  justify-content: start;
-  align-items: center;
-`;
-
 export const TabletParagraph = styled.p`
   margin: 0;
   color: #bfbfc3;
@@ -107,7 +92,6 @@ export const TabletHeading = styled.h1`
   color: #bfbfc3;
   font-size: 48px;
   padding-top: 10px;
-  padding-bottom: 10px;
 `;
 
 export const TabletNavigationButton = styled.button<{
@@ -130,10 +114,9 @@ export const TabletNavigationButton = styled.button<{
 `
 
 export const IconImage = styled.img.attrs(props => ({
-    src: props.src,
+  src: props.src,
 }))`
-    width: ${props => (props.width)}px;
-    
+    width: ${props => (props.width)}px;    
 `
 
 export const NavigationButtonParagraph = styled.p<{
@@ -150,7 +133,7 @@ export const NavigationButtonParagraph = styled.p<{
   align-items: center;
 `;
 
-export const TabletBackButton = styled.button`
+export const TabletFooterButton = styled.button`
   display: flex;
   flex-direction : column;
   flex-wrap: wrap;
@@ -165,33 +148,9 @@ export const TabletBackButton = styled.button`
   opacity: 0.8;
   height: 70px;
   width: 70px;
-`
+ `
 
-export const BackButtonParagraph = styled.p`
-  margin: 0;
-  color: #bfbfc3;
-  font-size: 18px;
-  padding-top: 0px;
-`;
-
-export const TabletHomeButton = styled.button`
-  display: flex;
-  flex-direction : column;
-  flex-wrap: wrap;
-  padding: 10px 0px;
-  margin: 20px 20px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid cyan;
-  background: #333;
-  border-radius: 6px;
-  opacity: 0.8;
-  height: 70px;
-  width: 70px;
-`
-
-export const HomeButtonParagraph = styled.p`
+export const TabletFooterButtonParagraph = styled.p`
   margin: 0;
   color: #bfbfc3;
   font-size: 18px;

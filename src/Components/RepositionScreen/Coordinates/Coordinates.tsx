@@ -32,7 +32,7 @@ const Coordinates = ({ latitude, longitude, velocity, heading, altitude }: Coord
                 <Box width="100%" margin="5px 0px 0px 0px">
                     <RoundedInputBox width="100%" disable={true}>
                         <RepositionParagraphComponent title={'Velocity'} />
-                        <CoordinatesInputField textAlign="left" type='text' name="longitude" value={velocity.toFixed(1)} />
+                        <CoordinatesInputField textAlign="left" type='text' name="longitude" value={velocity.toFixed(0)} />
                         <RepositionParagraphComponentUnits title={'knots'} />
                     </RoundedInputBox>
                 </Box>
@@ -46,7 +46,7 @@ const Coordinates = ({ latitude, longitude, velocity, heading, altitude }: Coord
                 <Box width="100%" margin="5px 0px 0px 0px">
                     <RoundedInputBox width="100%" disable={true}>
                         <RepositionParagraphComponent title={'Altitude'} />
-                        <CoordinatesInputField textAlign="left" type='text' name="longitude" value={altitude.toFixed(1)} />
+                        <CoordinatesInputField textAlign="left" type='text' name="longitude" value={altitude.toFixed(0)} />
                         <RepositionParagraphComponentUnits title={'ft'} />
                     </RoundedInputBox>
                 </Box>

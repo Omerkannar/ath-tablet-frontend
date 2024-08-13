@@ -1,4 +1,4 @@
-import { HeaderContainer, TabletHeading, HR } from "./Common.styles";
+import { HeaderFooterContainer, TabletHeading, HR } from "../Common.styles";
 
 interface HeaderInterface {
     title: string;
@@ -8,10 +8,10 @@ interface HeaderInterface {
 const Header = ({ title }: HeaderInterface) => {
 
     return (
-        <HeaderContainer>
+        <HeaderFooterContainer footer={false}>
             <TabletHeading>{title}</TabletHeading>
             <HR />
-        </HeaderContainer>
+        </HeaderFooterContainer>
     )
 }
 

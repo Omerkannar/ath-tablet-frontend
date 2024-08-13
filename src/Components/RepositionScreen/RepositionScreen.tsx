@@ -4,8 +4,8 @@ import Coordinates from "./Coordinates/Coordinates";
 import GroundAndEngine from "./GroundAndEngine/GroundAndEngine";
 import PresetLocations from "./PresetLocations/PresetLocations";
 import HeliContainer from "./PresetLocations/HeliContainer";
-import Header from "../Common/Header";
-import Footer from "../Common/Footer";
+import Header from "../Common/Components/Header";
+import Footer from "../Common/Components/Footer";
 import { AdditionalData, BasePoint, ButtonsActive } from "./RepositionTypesAndObjects";
 import { useState } from "react";
 import Runway from "../../Assets/runway.jpg";
@@ -145,7 +145,6 @@ const RepositionScreen = () => {
                     <Box2 width='100%' justify='center' >
                         <img style={{ marginTop: '-30px', marginRight: '40px' }} src={Runway} />
                         <HeliContainer caption={"TakeOff"} flip={true} label1='Takeoff' label2={`0K`} label3={' '} direction={'column'} align={'center'} buttonActive={activeButtons.takeoff} {...{ isActive }} />
-                        {/* </Box2> */}
                         <HeliContainer caption={"Final-Close"} flip={true} label1='Final' label2={'0.5 NM'} label3={'70Kts'} direction={'column'} align={'center'} buttonActive={activeButtons.finalClose} {...{ isActive }} />
                         <HeliContainer caption={"Final-Medium"} flip={true} label1='Final' label2={'2 NM'} label3={'100Kts'} direction={'column'} align={'center'} buttonActive={activeButtons.finalMedium} {...{ isActive }} />
                         <HeliContainer caption={"Final-Far"} flip={true} label1='Inbound' label2={'5 NM'} label3={'120Kts'} direction={'column'} align={'center'} buttonActive={activeButtons.finalFar} {...{ isActive }} />

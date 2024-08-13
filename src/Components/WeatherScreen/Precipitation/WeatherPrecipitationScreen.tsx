@@ -1,6 +1,6 @@
 import { MainContainer, BodyContainer } from "../../Common/Common.styles";
-import Header from "../../Common/Header";
-import Footer from "../../Common/Footer";
+import Header from "../../Common/Components/Header";
+import Footer from "../../Common/Components/Footer";
 
 
 const WeatherPrecipitationScreen = () => {

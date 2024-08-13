@@ -1,5 +1,5 @@
-import { TabletHomeButton, HomeButtonParagraph } from "./Common.styles";
-import HomeIcon from '../../Assets/home.png'
+import { TabletFooterButton, TabletFooterButtonParagraph } from "../Common.styles";
+import HomeIcon from '../../../Assets/home.png'
 import {useNavigate} from 'react-router-dom';
 
 interface HomeButtonInterface {
@@ -16,10 +16,10 @@ const HomeButton = ({disabled}: HomeButtonInterface) => {
     }
 
     return (
-        <TabletHomeButton disabled={disabled} onClick={()=>routeChange('/main')}>
+        <TabletFooterButton disabled={disabled} onClick={()=>routeChange('/main')}>
             <img src={HomeIcon} width={'25px'}/>
-            <HomeButtonParagraph>Main</HomeButtonParagraph>
-        </TabletHomeButton>
+            <TabletFooterButtonParagraph>Main</TabletFooterButtonParagraph>
+        </TabletFooterButton>
     )
 }
 

@@ -1,26 +1,22 @@
 import { useEffect, useState } from "react";
 import { VL } from "../../Common/Common.styles";
 import {
-    WindLayerContainer,
-    WindLayerHeadingContainer,
-    WindLayerAltitudeContainer,
-    WindsTypeButton,
-    WindLayerBoxTitle,
-    WindsAltitudeText,
-    WindLayerHeading,
+    WeatherLayerContainer,
+    WeatherLayerSectionContainer,
+    LayerName,
+    SectionTitle,
+    WeatherSectionButton,
+    WetherSectionText,
     ButtonsContainer,
     LayerButton,
 } from "../Weather.styles";
 
 import { WindLayerType } from "../Weather.types";
 
-
-
 interface WindLayerInterface {
     data: WindLayerType;
     handleWindsChange: (layer: WindLayerType) => void;
 }
-
 
 const MAX_LAYER_ALTITUDE: number = 40000;
 const LAYER_ALTITUDE_STEP: number = 500;
@@ -106,61 +102,61 @@ const WindLayer = ({ data, handleWindsChange }: WindLayerInterface) => {
 
 
     return (
-        <WindLayerContainer>
+        <WeatherLayerContainer>
 
-            <WindLayerHeadingContainer>
-                <WindLayerHeading>{windsData.LAYER_NAME}</WindLayerHeading>
-            </WindLayerHeadingContainer>
+            <WeatherLayerSectionContainer width="14%">
+                <LayerName>{windsData.LAYER_NAME}</LayerName>
+            </WeatherLayerSectionContainer>
             <VL />
 
-            <WindLayerAltitudeContainer>
-                <WindsTypeButton>
-                    <WindLayerBoxTitle>Base Altitude</WindLayerBoxTitle>
-                    <WindsAltitudeText>{windsData.LAYER_BASE_ALT} ft</WindsAltitudeText>
+            <WeatherLayerSectionContainer width="23%">
+                <WeatherSectionButton>
+                    <SectionTitle>Base Alt</SectionTitle>
+                    <WetherSectionText>{windsData.LAYER_BASE_ALT} ft</WetherSectionText>
                     <ButtonsContainer>
                         <LayerButton onClick={handleLayerBaseAltitudeChange}>-</LayerButton>
                         <LayerButton onClick={handleLayerBaseAltitudeChange}>+</LayerButton>
                     </ButtonsContainer>
-                </WindsTypeButton>
-            </WindLayerAltitudeContainer>
+                </WeatherSectionButton>
+                </WeatherLayerSectionContainer>
             <VL />
 
-            <WindLayerAltitudeContainer>
-                <WindsTypeButton>
-                    <WindLayerBoxTitle>Ceiling Altitude</WindLayerBoxTitle>
-                    <WindsAltitudeText>{windsData.LAYER_CEILING_ALT} ft</WindsAltitudeText>
+            <WeatherLayerSectionContainer width="23%">
+                <WeatherSectionButton>
+                    <SectionTitle>Ceiling Alt</SectionTitle>
+                    <WetherSectionText>{windsData.LAYER_CEILING_ALT} ft</WetherSectionText>
                     <ButtonsContainer>
                         <LayerButton onClick={handleLayerCeilingAltitudeChange}>-</LayerButton>
                         <LayerButton onClick={handleLayerCeilingAltitudeChange}>+</LayerButton>
                     </ButtonsContainer>
-                </WindsTypeButton>
-            </WindLayerAltitudeContainer>
+                </WeatherSectionButton>
+            </WeatherLayerSectionContainer>
             <VL />
 
-            <WindLayerAltitudeContainer>
-                <WindsTypeButton>
-                    <WindLayerBoxTitle>Speed</WindLayerBoxTitle>
-                    <WindsAltitudeText>{windsData.LAYER_SPEED} Knots</WindsAltitudeText>
+            <WeatherLayerSectionContainer width="23%">
+                <WeatherSectionButton>
+                    <SectionTitle>Speed</SectionTitle>
+                    <WetherSectionText>{windsData.LAYER_SPEED} Knots</WetherSectionText>
                     <ButtonsContainer>
                         <LayerButton onClick={handleLayerSpeedChange}>-</LayerButton>
                         <LayerButton onClick={handleLayerSpeedChange}>+</LayerButton>
                     </ButtonsContainer>
-                </WindsTypeButton>
-            </WindLayerAltitudeContainer>
+                </WeatherSectionButton>
+            </WeatherLayerSectionContainer>
             <VL />
 
-            <WindLayerAltitudeContainer>
-                <WindsTypeButton>
-                    <WindLayerBoxTitle>Direction</WindLayerBoxTitle>
-                    <WindsAltitudeText>{windsData.LAYER_DIRECTION} °Deg</WindsAltitudeText>
+            <WeatherLayerSectionContainer width="23%">
+                <WeatherSectionButton>
+                    <SectionTitle>Direction</SectionTitle>
+                    <WetherSectionText>{windsData.LAYER_DIRECTION} °Deg</WetherSectionText>
                     <ButtonsContainer>
                         <LayerButton onClick={handleLayerDirectionChange}>-</LayerButton>
                         <LayerButton onClick={handleLayerDirectionChange}>+</LayerButton>
                     </ButtonsContainer>
-                </WindsTypeButton>
-            </WindLayerAltitudeContainer>
+                </WeatherSectionButton>
+            </WeatherLayerSectionContainer>
 
-        </WindLayerContainer>
+        </WeatherLayerContainer>
 
     )
 }

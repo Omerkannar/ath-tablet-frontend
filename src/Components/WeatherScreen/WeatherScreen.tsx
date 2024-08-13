@@ -1,7 +1,12 @@
-import { MainContainer, BodyContainer, TabletNavigationButton, IconImage, NavigationButtonParagraph, DividedBodyContainer } from "../Common/Common.styles";
+import { MainContainer, 
+    BodyContainer, 
+    TabletNavigationButton, 
+    IconImage, 
+    NavigationButtonParagraph, 
+    DividedBodyContainer } from "../Common/Common.styles";
 import { useNavigate } from "react-router-dom";
-import Header from "../Common/Header";
-import Footer from "../Common/Footer";
+import Header from "../Common/Components/Header";
+import Footer from "../Common/Components/Footer";
 import CloudsIcon from '../../Assets/clouds.png'
 import WindsIcon from '../../Assets/wind.png'
 import RainIcon from '../../Assets/raindrops.png'
@@ -11,7 +16,6 @@ import { useState } from "react";
 type DustLevel = 'Off' | 'Low' | 'Medium' | 'High';
 type TurbulanceLevel = 'Off' | 'Low' | 'Medium' | 'High' | 'Extreme';
 type GustsLevel = 'Off' | 'On';
-
 
 const WeatherScreen = () => {
 
@@ -89,32 +93,32 @@ const WeatherScreen = () => {
             <Header title={"Weather"} />
             <BodyContainer flexDirection="column">
                 <DividedBodyContainer>
-                <TabletNavigationButton onClick={() => routeChange("/weather-clouds")}>
-                    <IconImage src={CloudsIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Clouds</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                <TabletNavigationButton onClick={() => routeChange("/weather-winds")}>
-                    <IconImage src={WindsIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Winds</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                <TabletNavigationButton onClick={() => routeChange("/weather-precipitation")}>
-                    <IconImage src={RainIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Precipitation</NavigationButtonParagraph>
-                </TabletNavigationButton>
+                    <TabletNavigationButton onClick={() => routeChange("/weather-clouds")}>
+                        <IconImage src={CloudsIcon} width={"80px"} />
+                        <NavigationButtonParagraph>Clouds</NavigationButtonParagraph>
+                    </TabletNavigationButton>
+                    <TabletNavigationButton onClick={() => routeChange("/weather-winds")}>
+                        <IconImage src={WindsIcon} width={"80px"} />
+                        <NavigationButtonParagraph>Winds</NavigationButtonParagraph>
+                    </TabletNavigationButton>
+                    <TabletNavigationButton onClick={() => routeChange("/weather-precipitation")}>
+                        <IconImage src={RainIcon} width={"80px"} />
+                        <NavigationButtonParagraph>Precipitation</NavigationButtonParagraph>
+                    </TabletNavigationButton>
                 </DividedBodyContainer>
                 <DividedBodyContainer>
-                <TabletNavigationButton justifyContent="start" onClick={handleDustChange}>
-                    <NavigationButtonParagraph height="50%">Dust</NavigationButtonParagraph>
-                    <NavigationButtonParagraph alignContent="end">{dustLevel}</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                <TabletNavigationButton justifyContent="start" onClick={handleTurbulanceChange}>
-                    <NavigationButtonParagraph height="50%">Turbulance</NavigationButtonParagraph>
-                    <NavigationButtonParagraph alignContent="end">{turbulanceLevel}</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                <TabletNavigationButton justifyContent="start" onClick={handleGustsChange}>
-                    <NavigationButtonParagraph height="50%">Gusts</NavigationButtonParagraph>
-                    <NavigationButtonParagraph alignContent="end">{gustsLevel}</NavigationButtonParagraph>
-                </TabletNavigationButton>
+                    <TabletNavigationButton justifyContent="start" onClick={handleDustChange}>
+                        <NavigationButtonParagraph height="50%">Dust</NavigationButtonParagraph>
+                        <NavigationButtonParagraph alignContent="end">{dustLevel}</NavigationButtonParagraph>
+                    </TabletNavigationButton>
+                    <TabletNavigationButton justifyContent="start" onClick={handleTurbulanceChange}>
+                        <NavigationButtonParagraph height="50%">Turbulance</NavigationButtonParagraph>
+                        <NavigationButtonParagraph alignContent="end">{turbulanceLevel}</NavigationButtonParagraph>
+                    </TabletNavigationButton>
+                    <TabletNavigationButton justifyContent="start" onClick={handleGustsChange}>
+                        <NavigationButtonParagraph height="50%">Gusts</NavigationButtonParagraph>
+                        <NavigationButtonParagraph alignContent="end">{gustsLevel}</NavigationButtonParagraph>
+                    </TabletNavigationButton>
                 </DividedBodyContainer>
 
             </BodyContainer>
