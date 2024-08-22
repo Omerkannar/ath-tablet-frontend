@@ -22,8 +22,7 @@ const MainScreen = () => {
         <MainContainer>
             <Header title={"Main Screen"} />
 
-            <BodyContainer>
-                
+            <BodyContainer>                
                 <TabletNavigationButton onClick={() => routeChange("/weather")}>
                     <IconImage src={WeatherIcon} width={"80px"} />
                     <NavigationButtonParagraph>Weather</NavigationButtonParagraph>
@@ -39,12 +38,45 @@ const MainScreen = () => {
                     <NavigationButtonParagraph>Reposition</NavigationButtonParagraph>
                 </TabletNavigationButton>
 
+                <TabletNavigationButton onClick={() => routeChange("/manage-malfuncion")}>
+                    <IconImage src={WarningIcon} width={"80px"} />
+                    <NavigationButtonParagraph>Manage Mal</NavigationButtonParagraph>
+                </TabletNavigationButton>
+
                 <TabletNavigationButton onClick={() => routeChange("/active-malfuncion")}>
                     <IconImage src={WarningIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Malfunction</NavigationButtonParagraph>
+                    <NavigationButtonParagraph>Active Mal</NavigationButtonParagraph>
                 </TabletNavigationButton>
 
             </BodyContainer>
+
+            <BodyContainer>                
+                <TabletNavigationButton onClick={() => routeChange("/quick-action")}>
+                    <IconImage src={WarningIcon} width={"80px"} />
+                    <NavigationButtonParagraph>Quick Action</NavigationButtonParagraph>
+                </TabletNavigationButton>
+
+                <TabletNavigationButton onClick={() => routeChange("/configuration")}>
+                    <IconImage src={WarningIcon} width={"80px"} />
+                    <NavigationButtonParagraph>XXX</NavigationButtonParagraph>
+                </TabletNavigationButton>
+
+                <TabletNavigationButton onClick={() => routeChange("/reposition")}>
+                    <IconImage src={WarningIcon} width={"80px"} />
+                    <NavigationButtonParagraph>XXX</NavigationButtonParagraph>
+                </TabletNavigationButton>
+
+                <TabletNavigationButton onClick={() => routeChange("/active-malfuncion")}>
+                    <IconImage src={WarningIcon} width={"80px"} />
+                    <NavigationButtonParagraph>XXX</NavigationButtonParagraph>
+                </TabletNavigationButton>
+
+                <TabletNavigationButton onClick={() => routeChange("/template")}>
+                    <IconImage src={WarningIcon} width={"80px"} />
+                    <NavigationButtonParagraph>XXX</NavigationButtonParagraph>
+                </TabletNavigationButton>
+            </BodyContainer>
+
             <Footer buttonsDisabled={false} />
 
 
