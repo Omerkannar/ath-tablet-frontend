@@ -19,6 +19,7 @@ const ManageMalfunctionsScreen = () => {
         // common-malfuncion
         // engine-malfuncion
         // auto-pilot-malfunction
+        console.log('Manage malfunction received on click')
     }
 
     let navigate = useNavigate();
@@ -51,7 +52,11 @@ const ManageMalfunctionsScreen = () => {
                     <NavigationButtonParagraph>Engine</NavigationButtonParagraph>
                 </TabletNavigationButton>
 
-                <TabletNavigationButton {...{ QuickActionRequest, QuickActionRequestString, handleAmbientLightsChange }} onClick={() => routeChange("/auto-pilot-malfunction")}>
+                <TabletNavigationButton onClick={() => {
+                    routeChange("/auto-pilot-malfunction")
+                    handleOnClick()
+                }}
+                >
                     <IconImage src={WeatherIcon} width={"80px"} />
                     <NavigationButtonParagraph>Auto Pilot</NavigationButtonParagraph>
                 </TabletNavigationButton>

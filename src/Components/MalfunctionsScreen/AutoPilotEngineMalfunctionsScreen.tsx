@@ -1,6 +1,7 @@
 import { MainContainer, BodyContainer } from "../Common/Common.styles";
 import Header from "../Common/Components/Header";
 import Footer from "../Common/Components/Footer";
+import { SendMalfunctionEvent } from "../Common/Common";
 
 
 import { TabletNavigationButton, IconImage, NavigationButtonParagraph } from "../Common/Common.styles";
@@ -9,94 +10,61 @@ import WeatherIcon from '../../Assets/weather.png';
 import ConfigurationIcon from '../../Assets/settings.png'
 import WarningIcon from '../../Assets/warning.png';
 import RepositionIcon from '../../Assets/route.png'
+import { useState } from "react";
 
-export interface QuickActionItemConstProps {
-    title?: string;
-    QuickActionRequest?: any;
-    QuickActionRequestString?: string;
-}
+import jsonData from './Data/AutoPilotMalfunctions.json'
 
 
-const AutoPilotMalfunctionsScreen = ({title, QuickActionRequest, QuickActionRequestString}: QuickActionItemConstProps) => {
+interface AutoPilotMalfunction {
+    name: string;
+    title: string;
+    value: boolean;
+};
 
-    const handleOnClick = (event : any ) => {
-        console.log('Debug 1 ', event);
-        console.log('Debug 2 ', event.target.name);
-        console.log('Debug 3 ', event.target.outerText);
+//  let AutoPilotMalfunctions: AutoPilotMalfunction[] = [];
 
-        QuickActionRequestString = event.target.name;
-        //QuickActionRequest(event.target.name);
-        //QuickActionRequestString = event.target.outerText;        
 
+const AutoPilotMalfunctionsScreen = () => {
+
+    const [autoPilotMalfunctions, setAutoPilotMalfunctions] = useState<AutoPilotMalfunction[]>(jsonData)
+
+    const handleOnClick = (event: any) => {
+
+        // SendMalfunctionEvent(event.target.outerText, true);
+        console.log(event.target.outerText)
+        const filterMalf = autoPilotMalfunctions.filter(item => {
+            return item.name === event.target.outerText
+        })
+
+        // setAutoPilotMalfunctions((prevItem)=> [...prevItem, ])
+        // console.log(filterMalf[0])
+        const newItem: AutoPilotMalfunction = {
+            "name": filterMalf[0].name,
+            "title": filterMalf[0].title,
+            "value": !filterMalf[0].value
+        }
+
+        setAutoPilotMalfunctions(prevItem => 
+            prevItem.map(item => 
+            item.name === newItem.name ? {...item, value: newItem.value} : item
+        ))
+        // console.log(autoPilotMalfunctions)
     }
 
-    let navigate = useNavigate();
 
-    const routeChange = (navigateToPath: string) => {
-        let path = navigateToPath;
-        navigate(path);
-    }
 
     return (
         <MainContainer>
             <Header title={"Auto Pilot Malfunctions Screen"} />
-            <BodyContainer>                
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Autopilot Failure 1</NavigationButtonParagraph>
-                </TabletNavigationButton>
-
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Autopilot Failure 2</NavigationButtonParagraph>
-                </TabletNavigationButton>
-
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Vertical Gypo 1</NavigationButtonParagraph>
-                </TabletNavigationButton>
-
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Vertical Gypo 2</NavigationButtonParagraph>
-                </TabletNavigationButton>
-
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Pitch Actuator 1</NavigationButtonParagraph>
-                </TabletNavigationButton>
-
-                
-            </BodyContainer>
-
-            <BodyContainer>                
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Roll Actuator 2</NavigationButtonParagraph>
-                </TabletNavigationButton>
-
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Yaw Actuator</NavigationButtonParagraph>
-                </TabletNavigationButton>
-
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Oscillatory During Roll</NavigationButtonParagraph>
-                </TabletNavigationButton>
-
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Repeated Disturbances During Roll</NavigationButtonParagraph>
-                </TabletNavigationButton>
-
-                <TabletNavigationButton onClick={handleOnClick}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Helipilot Control Panel</NavigationButtonParagraph>
-                </TabletNavigationButton>                
+            <BodyContainer>
+                {autoPilotMalfunctions.map((item: AutoPilotMalfunction) => {
+                    return (<TabletNavigationButton borderOn={item.value} onClick={handleOnClick}>
+                        <NavigationButtonParagraph>{item.name}</NavigationButtonParagraph>
+                    </TabletNavigationButton>)
+                })}
             </BodyContainer>
             <Footer buttonsDisabled={false} />
-            
+
         </MainContainer>
     )
 }

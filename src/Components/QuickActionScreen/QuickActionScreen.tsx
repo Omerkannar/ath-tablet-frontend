@@ -4,6 +4,7 @@ import Header from "../Common/Components/Header";
 import Footer from "../Common/Components/Footer";
 
 import { TabletNavigationButton, IconImage, NavigationButtonParagraph } from "../Common/Common.styles";
+import { SendQuickActionEvent } from '../Common/Common';
 import { useNavigate } from "react-router-dom";
 import WeatherIcon from '../../Assets/weather.png';
 import ConfigurationIcon from '../../Assets/settings.png'
@@ -11,35 +12,35 @@ import WarningIcon from '../../Assets/warning.png';
 import RepositionIcon from '../../Assets/route.png'
 
 const QuickActionScreen = () => {
-    
-    const [flightFreeze, setFlightFreeze] = useState<boolean>(false);
-    const [crashOverride, setCrashOverride] = useState<boolean>(false);
-    const [heliResetSetToTrue, setHeliResetSetToTrue] = useState<boolean>(false);    
-    const [dustStatus, setDustStatus] = useState<string>('');
-    const [dustString, setDustString] = useState<string>('Off');
-    const [dustLevel, setDustLevel] = useState<number>(0);
-    const [airportLighActive, setAirportLighActive] = useState<string>('Off');
-    
 
-    let navigate = useNavigate();
+  const [flightFreeze, setFlightFreeze] = useState<boolean>(false);
+  const [crashOverride, setCrashOverride] = useState<boolean>(false);
+  const [heliResetSetToTrue, setHeliResetSetToTrue] = useState<boolean>(false);
+  const [dustStatus, setDustStatus] = useState<string>('');
+  const [dustString, setDustString] = useState<string>('Off');
+  const [dustLevel, setDustLevel] = useState<number>(0);
+  const [airportLighActive, setAirportLighActive] = useState<string>('Off');
 
-    const routeChange = (navigateToPath: string) => {
-        let path = navigateToPath;
-        navigate(path);
-    }
 
-    useEffect(() => {
-        setTimeout(() => {
-          if (heliResetSetToTrue === true) {
-            setHeliResetSetToTrue(false)
-            OnClickHelicopterReset(false)
-          }
-        }, 2000);
-      }, [heliResetSetToTrue]);
+  let navigate = useNavigate();
 
-    const handleOnClick = () => {     
-        // m_nEntityID
-    }
+  const routeChange = (navigateToPath: string) => {
+    let path = navigateToPath;
+    navigate(path);
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (heliResetSetToTrue === true) {
+        setHeliResetSetToTrue(false)
+        OnClickHelicopterReset(false)
+      }
+    }, 2000);
+  }, [heliResetSetToTrue]);
+
+  const handleOnClick = () => {
+    // m_nEntityID
+  }
 
   // ============================================================================================
   //                                       #1 - OnClickFlightFreeze
@@ -47,7 +48,7 @@ const QuickActionScreen = () => {
   const OnClickFlightFreeze = () => {
 
     console.log("Tablet:QuickAction => On Click : #01 Start : Flight Freeze ...")
-    
+
     const m_dEntityId = -1
 
     let flightFreezeStr = "false"
@@ -60,33 +61,40 @@ const QuickActionScreen = () => {
       flightFreezeStr = "false"
     }
 
-    fetch('https://192.168.18.108:5001/FireEvent/SetData', {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        'accept': '*/*'
-      },
-      body: JSON.stringify(
-        {
-          "eventName": "Quick Action FlightFreeze ...",
-          "eventId": "ATH_WEB_SET_OWNSHIP_FLIGHT_FREEZE",
-          "eventClass": "CEventATH_WEB_OwnshipFlightFreeze",
-          "entityId": -1,
-          "eventParams": [m_dEntityId, flightFreezeStr]
-        })
-    });
+
+    SendQuickActionEvent("Quick Action FlightFreeze ...",
+      "ATH_WEB_SET_OWNSHIP_FLIGHT_FREEZE",
+      "CEventATH_WEB_OwnshipFlightFreeze",
+      m_dEntityId,
+      [m_dEntityId, flightFreezeStr]
+    )
+    // fetch('https://192.168.18.108:5001/FireEvent/SetData', {
+    //   method: 'PUT',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     'accept': '*/*'
+    //   },
+    //   body: JSON.stringify(
+    //     {
+    //       "eventName": "Quick Action FlightFreeze ...",
+    //       "eventId": "ATH_WEB_SET_OWNSHIP_FLIGHT_FREEZE",
+    //       "eventClass": "CEventATH_WEB_OwnshipFlightFreeze",
+    //       "entityId": -1,
+    //       "eventParams": [m_dEntityId, flightFreezeStr]
+    //     })
+    // });
 
     console.log("Tablet:QuickAction => On Click : #01 Finish : Flight Freeze ...")
   }
-   
+
   // ============================================================================================
   //                                     #2 - OnClickFlightRun
   // ============================================================================================
   const OnClickFlightRun = () => {
 
     console.log("Tablet:QuickAction => On Click : #02 Start : OnClickFlightRun ...")
-    
-    const m_dEntityId = -1        
+
+    const m_dEntityId = -1
 
     fetch('https://192.168.18.108:5001/FireEvent/SetData', {
       method: 'PUT',
@@ -217,7 +225,7 @@ const QuickActionScreen = () => {
 
     console.log("Tablet:QuickAction => On Click : #06 Finish : OnClickCrashOverride ...")
   }
-  
+
   const OnClickHelicopterReset = (cmdToSend: boolean) => {
 
     const m_dEntityId = -1
@@ -242,10 +250,10 @@ const QuickActionScreen = () => {
 
     console.log("Tablet:QuickAction => On Click : #07 Finish : OnClickHelicopterReset => {cmdToSend} ...")
   }
-  
+
   const OnClickDustOnOff = () => {
 
-    console.log("Tablet:QuickAction => On Click : #08 Start : OnClickDustOnOff, Dust Status = ", dustStatus, ", Dust Level = ",  dustLevel, " ...")
+    console.log("Tablet:QuickAction => On Click : #08 Start : OnClickDustOnOff, Dust Status = ", dustStatus, ", Dust Level = ", dustLevel, " ...")
 
     const m_dEntityId = -1
     let dustLevelIndex = dustLevel
@@ -265,7 +273,7 @@ const QuickActionScreen = () => {
       dustCmmand = true
     }
     setDustLevel(dustLevelIndex)
-    
+
 
     fetch('https://192.168.18.108:5001/FireEvent/SetData', {
       method: 'PUT',
@@ -283,23 +291,23 @@ const QuickActionScreen = () => {
         })
     });
 
-    console.log("Tablet:QuickAction => On Click : #08 Finish : OnClickDustOnOff, Dust Status = ", dustStatus, ", Dust Level = ",  dustLevel, " ...")
+    console.log("Tablet:QuickAction => On Click : #08 Finish : OnClickDustOnOff, Dust Status = ", dustStatus, ", Dust Level = ", dustLevel, " ...")
   }
 
   const OnClickAirportLighActive = () => {
 
     console.log("Tablet:QuickAction => On Click : #09 Start : OnClickAirportLighActive = ", airportLighActive, " ...")
-        
+
     let airportLighActiveTemp = airportLighActive === 'Off' ? false : true;
 
     // test code    
-    if (airportLighActive === "On") {      
-      setAirportLighActive('Off')            
+    if (airportLighActive === "On") {
+      setAirportLighActive('Off')
     }
     else {
-      setAirportLighActive('On')            
+      setAirportLighActive('On')
     }
-        
+
     fetch('https://192.168.18.108:5001/FireEvent/SetData', {
       method: 'PUT',
       headers: {
@@ -318,13 +326,13 @@ const QuickActionScreen = () => {
 
     console.log("Tablet:QuickAction => On Click : #09 Finish : OnClickAirportLighActive = ", airportLighActive, " ...")
   }
-  
+
   const OnClickRefuel = () => {
 
     console.log("Tablet:QuickAction => On Click : #10 Start : OnClickRefuel ...")
-        
+
     const m_dEntityId = -1
-        
+
     fetch('https://192.168.18.108:5001/FireEvent/SetData', {
       method: 'PUT',
       headers: {
@@ -343,75 +351,75 @@ const QuickActionScreen = () => {
 
     console.log("Tablet:QuickAction => On Click : #10 Finish : OnClickRefuel ...")
   }
-  
+
   return (
-        <MainContainer>
-            <Header title={"Quick Action Screen"} />
-            <BodyContainer>                                
-                <TabletNavigationButton onClick={() => OnClickFlightFreeze()}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Flight Freeze</NavigationButtonParagraph>
-                </TabletNavigationButton>
+    <MainContainer>
+      <Header title={"Quick Action Screen"} />
+      <BodyContainer>
+        <TabletNavigationButton onClick={() => OnClickFlightFreeze()}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Flight Freeze</NavigationButtonParagraph>
+        </TabletNavigationButton>
 
-                <TabletNavigationButton onClick={() => OnClickFlightRun()}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Flight Run</NavigationButtonParagraph>
-                </TabletNavigationButton>
+        <TabletNavigationButton onClick={() => OnClickFlightRun()}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Flight Run</NavigationButtonParagraph>
+        </TabletNavigationButton>
 
-                
-                <TabletNavigationButton onClick={() => OnClickClearAllMalfunction()}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Clear All Mal</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                                
-                <TabletNavigationButton onClick={() => OnClickEngineQuickStart()}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Engine Start</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                
-                <TabletNavigationButton onClick={() => OnClickDustOnOff()}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Dust {dustString} {dustLevel} </NavigationButtonParagraph>
-                </TabletNavigationButton>
 
-                
-            </BodyContainer>
+        <TabletNavigationButton onClick={() => OnClickClearAllMalfunction()}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Clear All Mal</NavigationButtonParagraph>
+        </TabletNavigationButton>
 
-            <BodyContainer>                            
-                <TabletNavigationButton onClick={() => OnClickAirportLighActive()}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                <NavigationButtonParagraph>Air Lights {airportLighActive}</NavigationButtonParagraph>
-                </TabletNavigationButton>
+        <TabletNavigationButton onClick={() => OnClickEngineQuickStart()}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Engine Start</NavigationButtonParagraph>
+        </TabletNavigationButton>
 
-                
-                <TabletNavigationButton onClick={() => OnClickRefuel()}>                
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Refuel</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                
-                <TabletNavigationButton onClick={() => OnClickCrashReset()}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Crash Reset</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                
-                <TabletNavigationButton onClick={() => OnClickHelicopterReset(false)}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Heli Reset</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                
-                <TabletNavigationButton onClick={() => OnClickCrashOverride()}>
-                    <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Crash Overrite</NavigationButtonParagraph>
-                </TabletNavigationButton>
-                
-            </BodyContainer>
+        <TabletNavigationButton onClick={() => OnClickDustOnOff()}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Dust {dustString} {dustLevel} </NavigationButtonParagraph>
+        </TabletNavigationButton>
 
-            <BodyContainer>                                
-            </BodyContainer>
-            <Footer buttonsDisabled={false} />
-            
-        </MainContainer>
-    )
+
+      </BodyContainer>
+
+      <BodyContainer>
+        <TabletNavigationButton onClick={() => OnClickAirportLighActive()}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Air Lights {airportLighActive}</NavigationButtonParagraph>
+        </TabletNavigationButton>
+
+
+        <TabletNavigationButton onClick={() => OnClickRefuel()}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Refuel</NavigationButtonParagraph>
+        </TabletNavigationButton>
+
+        <TabletNavigationButton onClick={() => OnClickCrashReset()}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Crash Reset</NavigationButtonParagraph>
+        </TabletNavigationButton>
+
+        <TabletNavigationButton onClick={() => OnClickHelicopterReset(false)}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Heli Reset</NavigationButtonParagraph>
+        </TabletNavigationButton>
+
+        <TabletNavigationButton onClick={() => OnClickCrashOverride()}>
+          <IconImage src={WeatherIcon} width={"80px"} />
+          <NavigationButtonParagraph>Crash Overrite</NavigationButtonParagraph>
+        </TabletNavigationButton>
+
+      </BodyContainer>
+
+      <BodyContainer>
+      </BodyContainer>
+      <Footer buttonsDisabled={false} />
+
+    </MainContainer>
+  )
 }
 
 export default QuickActionScreen;

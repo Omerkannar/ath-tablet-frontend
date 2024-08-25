@@ -35,17 +35,17 @@ const CommonMalfunctionsScreen = () => {
 
                 <TabletNavigationButton onClick={handleOnClick}>
                     <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Engine Flameout - no restart</NavigationButtonParagraph>
+                    <NavigationButtonParagraph>Engine Flameout - No Restart</NavigationButtonParagraph>
                 </TabletNavigationButton>
 
                 <TabletNavigationButton onClick={handleOnClick}>
                     <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Malf of the fuel control system - decrease</NavigationButtonParagraph>
+                    <NavigationButtonParagraph>Fuel control system - Decrease</NavigationButtonParagraph>
                 </TabletNavigationButton>
 
                 <TabletNavigationButton onClick={handleOnClick}>
                     <IconImage src={WeatherIcon} width={"80px"} />
-                    <NavigationButtonParagraph>Malf of the fuel control system - increase</NavigationButtonParagraph>
+                    <NavigationButtonParagraph>Fuel control system - Increase</NavigationButtonParagraph>
                 </TabletNavigationButton>
 
                 <TabletNavigationButton onClick={handleOnClick}>

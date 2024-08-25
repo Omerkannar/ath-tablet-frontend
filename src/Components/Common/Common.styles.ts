@@ -96,21 +96,22 @@ export const TabletHeading = styled.h1`
 
 export const TabletNavigationButton = styled.button<{
   justifyContent?: string;
+  borderOn?: boolean;
 }>`
   display: flex;
   flex-direction : column;
   flex-wrap: wrap;
-  padding: 10px 0px;
-  margin: 20px 20px;
+  padding: 10px 0px 0px 0px;
+  margin: 15px 15px;
   align-content: center;
   justify-content: ${(p) => p.justifyContent || "center"};
   align-items: center;
-  border: 1px solid cyan;
+  border: ${(p) => p.borderOn? "1px solid yellow": "1px solid cyan"};
   background: #333;
   border-radius: 6px;
   opacity: 0.8;
-  height: 180px;
-  width: 180px;
+  height: 210px;
+  width: 210px;
 `
 
 export const IconImage = styled.img.attrs(props => ({
@@ -124,13 +125,15 @@ export const NavigationButtonParagraph = styled.p<{
   height?: string;
 }>`
   margin: 0;
+  padding-top: 20px;
   color: #bfbfc3;
   font-size: 24px;
   word-wrap: normal;
   height: ${(p) => p.height || "35%"};
+  width: 90%;
   align-content: ${(p) => p.alignContent || "center"};;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 `;
 
 export const TabletFooterButton = styled.button`

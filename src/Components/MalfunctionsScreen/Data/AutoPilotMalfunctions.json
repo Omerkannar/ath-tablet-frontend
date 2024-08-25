@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Autopilot Failure 1",
+        "title": "AUTO_PILOT_FAIL_1",
+        "value": false
+    },
+    {
+        "name": "Autopilot Failure 2",
+        "title": "AUTO_PILOT_FAIL_2",
+        "value": false
+    },
+    {
+        "name": "Vertical Gypo 1",
+        "title": "AUTO_PILOT_VERTICAL_GYRO_1",
+        "value": false
+    },
+    {
+        "name": "Vertical Gypo 2",
+        "title": "AUTO_PILOT_VERTICAL_GYRO_2",
+        "value": false
+    },
+    {
+        "name": "Pitch Actuator 1",
+        "title": "AUTO_PILOT_PITCH_ACTUATOR_1",
+        "value": false
+    },
+    {
+        "name": "Roll Actuator 1",
+        "title": "AUTO_PILOT_ROLL_ACTUATOR_1",
+        "value": false
+    },
+    {
+        "name": "Yaw Actuator",
+        "title": "AUTO_PILOT_YAW_ACTUATOR",
+        "value": false
+    },
+    {
+        "name": "Oscillatory During Roll",
+        "title": "AUTO_PILOT_OSCILLATORY_DURING_ROLL",
+        "value": false
+    },
+    {
+        "name": "Repeated Disturbances During Roll",
+        "title": "AUTO_PILOT_Repeated Disturbances During Roll",
+        "value": false
+    },
+    {
+        "name": "Helipilot Control Panel",
+        "title": "AUTO_PILOT_Helipilot Control Panel",
+        "value": false
+    }
+]

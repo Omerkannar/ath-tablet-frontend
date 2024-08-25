@@ -23,34 +23,34 @@ import CommunicationMalfunctionsScreen from "./Components/MalfunctionsScreen/Com
 
 function App() {
 
-  
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainScreen />} />
-        <Route path="/main" element={<MainScreen />} />
-        <Route path="/weather" element={<WeatherScreen />} />
-        <Route path="/weather-clouds" element={<WeatherCloudsScreen />} />
-        <Route path="/weather-winds" element={<WeatherWindsScreen />} />
-        <Route path="/weather-precipitation" element={<WeatherPrecipitationScreen />} />
-        <Route path="/configuration" element={<ConfigurationScreen />} />
-        <Route path="/reposition" element={<RepositionScreen />} />
-        <Route path="/active-malfuncion" element={<ActiveMalfunctionsScreen />} />
-        <Route path="/manage-malfuncion" element={<ManageMalfunctionsScreen />} />
-        <Route path="/common-malfuncion" element={<CommonMalfunctionsScreen />} />        
-        <Route path="/engine-malfuncion" element={<EngineMalfunctionsScreen />} />        
-        <Route path="/auto-pilot-malfunction" element={<AutoPilotMalfunctionsScreen/>} />  
-        <Route path="/electrics-malfunction" element={<ElectricsMalfunctionsScreen/>} />                        
-        <Route path="/fuel-malfunction" element={<FuelMalfunctionsScreen/>} />                        
-        <Route path="/transmission-malfunction" element={<TransmissionMalfunctionsScreen/>} />                        
-        <Route path="/fire-protection-malfunction" element={<FireProtectionMalfunctionsScreen/>} />                        
-        <Route path="/hydralic-malfunction" element={<HydralicMalfunctionsScreen/>} />                        
-        <Route path="/flight-control-malfunction" element={<FlightControlMalfunctionsScreen/>} />                        
-        <Route path="/communication-malfunction" element={<CommunicationMalfunctionsScreen/>} />                        
-        <Route path="/quick-action" element={<QuickActionScreen />} />        
-        <Route path="/template" element={<Template />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainScreen />} />
+          <Route path="/main" element={<MainScreen />} />
+          <Route path="/weather" element={<WeatherScreen />} />
+          <Route path="/weather-clouds" element={<WeatherCloudsScreen />} />
+          <Route path="/weather-winds" element={<WeatherWindsScreen />} />
+          <Route path="/weather-precipitation" element={<WeatherPrecipitationScreen />} />
+          <Route path="/configuration" element={<ConfigurationScreen />} />
+          <Route path="/reposition" element={<RepositionScreen />} />
+          <Route path="/active-malfuncion" element={<ActiveMalfunctionsScreen />} />
+          <Route path="/manage-malfuncion" element={<ManageMalfunctionsScreen />} />
+          <Route path="/common-malfuncion" element={<CommonMalfunctionsScreen />} />
+          <Route path="/engine-malfuncion" element={<EngineMalfunctionsScreen />} />
+          <Route path="/auto-pilot-malfunction" element={<AutoPilotMalfunctionsScreen />} />
+          <Route path="/electrics-malfunction" element={<ElectricsMalfunctionsScreen />} />
+          <Route path="/fuel-malfunction" element={<FuelMalfunctionsScreen />} />
+          <Route path="/transmission-malfunction" element={<TransmissionMalfunctionsScreen />} />
+          <Route path="/fire-protection-malfunction" element={<FireProtectionMalfunctionsScreen />} />
+          <Route path="/hydralic-malfunction" element={<HydralicMalfunctionsScreen />} />
+          <Route path="/flight-control-malfunction" element={<FlightControlMalfunctionsScreen />} />
+          <Route path="/communication-malfunction" element={<CommunicationMalfunctionsScreen />} />
+          <Route path="/quick-action" element={<QuickActionScreen />} />
+          <Route path="/template" element={<Template />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
