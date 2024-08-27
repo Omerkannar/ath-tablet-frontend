@@ -48,7 +48,9 @@ const AutoPilotMalfunctionsScreen = () => {
             prevItem.map(item => 
             item.name === newItem.name ? {...item, value: newItem.value} : item
         ))
-        // console.log(autoPilotMalfunctions)
+        
+        SendMalfunctionEvent(newItem.name, newItem.value)
+
     }
 
 

@@ -106,7 +106,7 @@ export const TabletNavigationButton = styled.button<{
   align-content: center;
   justify-content: ${(p) => p.justifyContent || "center"};
   align-items: center;
-  border: ${(p) => p.borderOn? "1px solid yellow": "1px solid cyan"};
+  border: ${(p) => p.borderOn? "5px solid yellow": "1px solid cyan"};
   background: #333;
   border-radius: 6px;
   opacity: 0.8;
@@ -151,7 +151,7 @@ export const TabletFooterButton = styled.button`
   opacity: 0.8;
   height: 70px;
   width: 70px;
- `
+ `;
 
 export const TabletFooterButtonParagraph = styled.p`
   margin: 0;
@@ -159,3 +159,23 @@ export const TabletFooterButtonParagraph = styled.p`
   font-size: 18px;
   padding-top: 0px;
 `;
+
+export const TabletFooterStatus = styled.div<{
+  color?: string
+}>`
+  display: flex;
+  flex-direction : column;
+  flex-wrap: wrap;
+  padding: 0px 0px;
+  margin: 20px 20px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid;
+  border-color: ${(p) => p.color || "cyan"};
+  background: #333;
+  border-radius: 6px;
+  opacity: 0.8;
+  height: 70px;
+  width: 200px;
+ `
